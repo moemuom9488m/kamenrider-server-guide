@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>假面騎士伺服器進入須知</title>
+<meta name="description" content="假面騎士模組生存伺服器（Minecraft Java 1.21.1 + NeoForge）的安裝與進入須知">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column; a spec strip up top, then numbered install steps, then a troubleshooting table. */
+:root {
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --fg: #1c231d;
+  --muted: #5b675d;
+  --line: #d7ded6;
+  --accent: #2e7d32;      /* grasshopper green */
+  --accent-ink: #ffffff;
+  --signal: #b3261e;      /* belt-light red, only for warnings */
+  --code-bg: #eaefe9;
+  --display: "Chakra Petch", "Noto Sans TC", system-ui, sans-serif;
+  --body: "Noto Sans TC", system-ui, -apple-system, "PingFang TC", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121612; --surface: #1a201b; --fg: #e3e9e2; --muted: #9aa69b; --line: #2d362e;
+    --accent: #7cc47f; --accent-ink: #0f1a10; --signal: #f2a39c; --code-bg: #222a23; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121612; --surface: #1a201b; --fg: #e3e9e2; --muted: #9aa69b; --line: #2d362e;
+  --accent: #7cc47f; --accent-ink: #0f1a10; --signal: #f2a39c; --code-bg: #222a23; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.7; }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+h1, h2 { font-family: var(--display); text-wrap: balance; line-height: 1.25; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 40px); }
+h2 { font-size: 22px; display: flex; gap: 12px; align-items: baseline; }
+h2 .n { font-family: var(--display); color: var(--accent); font-size: 15px; letter-spacing: .08em; }
+p { margin: 0; }
+.lead { color: var(--muted); max-width: 62ch; }
+section { display: grid; gap: 14px; min-width: 0; }
+.eyebrow { font-family: var(--display); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.spec div { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; }
+.spec dt { font-size: 13px; color: var(--muted); }
+.spec dd { margin: 0; font-family: var(--display); font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+code, .path { font-family: var(--mono); font-size: .92em; background: var(--code-bg); padding: 1px 6px; border-radius: 4px; overflow-wrap: anywhere; }
+.mods { display: grid; gap: 10px; }
+.mod { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: baseline; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+.mod b { font-size: 17px; }
+.mod .ver { font-family: var(--mono); font-weight: 600; color: var(--accent); }
+.mod small { grid-column: 1 / -1; color: var(--muted); font-size: 14px; }
+.mod a { color: var(--accent); }
+ol.steps { margin: 0; padding-left: 1.4em; display: grid; gap: 8px; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { font-family: var(--display); font-size: 13px; letter-spacing: .08em; color: var(--muted); font-weight: 500; }
+td:first-child { font-family: var(--mono); font-size: 14px; white-space: nowrap; }
+.addr { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.addr div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; min-width: 0; }
+.addr .ip { font-family: var(--mono); font-size: 19px; font-weight: 600; }
+.addr span { color: var(--muted); font-size: 14px; }
+.note { border-left: 3px solid var(--signal); padding: 4px 0 4px 14px; color: var(--fg); }
+.note b { color: var(--signal); }
+ul { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body { margin: 0; }
+.footer { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header style="display:grid;gap:12px">
+    <span class="eyebrow">Kamen Rider Craft · NeoForge</span>
+    <h1>假面騎士伺服器進入須知</h1>
+    <p class="lead">照著下面的步驟裝好 NeoForge 和四個必備模組，就能連進假面騎士模組生存伺服器。版本要跟伺服器一樣，差一點就會被擋在門外。</p>
+  </header>
+
+  <dl class="spec">
+    <div><dt>Minecraft</dt><dd>1.21.1</dd></div>
+    <div><dt>載入器</dt><dd>NeoForge 21.1.262</dd></div>
+    <div><dt>版本</dt><dd>僅限 Java 版</dd></div>
+    <div><dt>正版驗證</dt><dd>需要正版帳號</dd></div>
+  </dl>
+
+  <section>
+    <h2><span class="n">STEP 1</span>安裝 NeoForge 1.21.1</h2>
+    <ol class="steps">
+      <li>用官方 Minecraft Launcher 先啟動一次原版 <b>1.21.1</b>，確認能進遊戲。</li>
+      <li>到 NeoForge 官網 <a href="https://neoforged.net/">neoforged.net</a> 下載 <b>1.21.1</b> 的 installer（建議與伺服器相同的 <code>21.1.262</code>），執行後選 <b>Install client</b>。</li>
+      <li>Launcher 會多出一個 NeoForge 1.21.1 的設定檔，之後都用它開遊戲。</li>
+    </ol>
+    <p class="lead">用 Prism Launcher 或 CurseForge App 的話，建立實例時選 Minecraft 1.21.1、載入器選 NeoForge 即可。不要選 Forge、Fabric 或 Quilt。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">STEP 2</span>放入必備模組</h2>
+    <p>四個都要裝，版本請用跟伺服器一樣的。全部從 Modrinth 官方頁面下載，選 <b>NeoForge</b> 與 <b>1.21.1</b> 的版本。</p>
+    <div class="mods">
+      <div class="mod"><b>Kamen Rider Craft</b><span class="ver">1.1.4</span><small>主模組。<a href="https://modrinth.com/mod/kamen-rider-craft/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
+      <div class="mod"><b>GeckoLib</b><span class="ver">4.9.3</span><small>Kamen Rider Craft 的前置（需要 4.8.4 以上）。<a href="https://modrinth.com/mod/geckolib/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
+      <div class="mod"><b>Player Animation Library</b><span class="ver">1.1.6</span><small>Kamen Rider Craft 的前置（需要 1.1.4 以上），變身動作靠它。<a href="https://modrinth.com/mod/player-animation-library/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
+      <div class="mod"><b>Patchouli</b><span class="ver">1.21.1-93</span><small>遊戲內指南書，Kamen Rider Craft 的說明書靠它顯示。<a href="https://modrinth.com/mod/patchouli/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
+    </div>
+    <p>模組 <code>.jar</code> 檔放的位置：</p>
+    <ul>
+      <li>官方 Minecraft Launcher：<span class="path">.minecraft/mods/</span>（Windows 在 <span class="path">%appdata%\.minecraft\mods</span>，Mac 在 <span class="path">~/Library/Application Support/minecraft/mods</span>）</li>
+      <li>Prism Launcher / MultiMC：該實例的 <span class="path">mods/</span> 資料夾（實例上按右鍵 → 開啟資料夾）</li>
+      <li>CurseForge App：該 Custom Profile 的 <span class="path">mods/</span> 資料夾（Profile → … → Open Folder）</li>
+    </ul>
+    <p class="lead">伺服器另外裝了 Lithium、FerriteCore、ModernFix、Chunky、spark，它們只在伺服器上運作，玩家不用裝。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">STEP 3</span>連進伺服器</h2>
+    <p>伺服器透過 <b>Tailscale</b> 連線，不對外公開，<b>位址請直接向服主索取</b>。</p>
+    <ol class="steps">
+      <li>到 <a href="https://tailscale.com/download">tailscale.com/download</a> 安裝 Tailscale 並登入。</li>
+      <li>把你登入 Tailscale 用的帳號告訴服主，等服主把你加入或把伺服器分享給你。</li>
+      <li>開著 Tailscale，在 Minecraft「多人遊戲 → 新增伺服器」輸入服主給你的位址。</li>
+    </ol>
+    <p class="note"><b>基岩版不能玩：</b>手機、Switch、PS、Xbox 和 Windows 基岩版都無法連線，模組只支援 Java 版。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">進服之後</span>中文翻譯與指南書</h2>
+    <ul>
+      <li><b>繁體中文翻譯：</b>第一次進服會跳出「套用假面騎士模組繁體中文翻譯？」，按<b>是</b>就會自動下載並套用（需開著 Tailscale）。接著到「選項 → 語言」選 <b>繁體中文（台灣）</b>。</li>
+      <li><b>指南書：</b>第一次進服會自動拿到一本 Kamen Rider Craft 指南書，裡面有各騎士的取得與變身方式（內容是英文）。弄丟了可以用 3 張紙 + 1 個皮革 + 1 個騎士電路板（Rider Circuit）無序合成。</li>
+      <li><b>時間暫停：</b>伺服器連續 5 分鐘沒人在線時，日夜、天氣和作物生長會暫停；有人進來就恢復。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">STEP 4</span>連不上時看這裡</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>錯誤訊息</th><th>意思</th><th>怎麼處理</th></tr></thead>
+        <tbody>
+          <tr><td>missing mods</td><td>你少裝了伺服器有的模組</td><td>把訊息列出的模組（照上面的版本）放進 <span class="path">mods/</span></td></tr>
+          <tr><td>extra mods</td><td>你多裝了伺服器沒有、又需要兩邊都有的模組</td><td>把列出的模組先移出 <span class="path">mods/</span> 再連；若是純畫面類模組，可改用支援的版本</td></tr>
+          <tr><td>version mismatch<br>channel version mismatch</td><td>模組版本跟伺服器不同</td><td>換成跟伺服器一樣的版本（見 STEP 2）</td></tr>
+          <tr><td>not running NeoForge</td><td>你用的是原版、Forge 或 Fabric</td><td>改用 NeoForge 1.21.1 的設定檔開遊戲</td></tr>
+          <tr><td>Connection timed out</td><td>連不到伺服器</td><td>確認 Tailscale 有開、有登入，且服主已經把你加進來</td></tr>
+          <tr><td>Incompatible mod set</td><td>整體模組組合對不上</td><td>先只留四個必備模組測試，能連上後再一個一個加回其他模組</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>裝了 Sodium、Iris、小地圖、JEI、回放或視角類模組後連不上的話，先把它暫時移出 <span class="path">mods/</span> 試一次。確定是它造成的，再改用支援 NeoForge 1.21.1 的版本。不需要刪掉整個 <span class="path">.minecraft</span>，也不要下載來路不明的整合包。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">STEP 5</span>還是不行，請提供這三樣給服主</h2>
+    <ul>
+      <li>完整的錯誤畫面截圖</li>
+      <li>你的 <span class="path">mods/</span> 資料夾裡所有檔案的清單（截圖或把檔名貼上來都可以）</li>
+      <li>最新的用戶端 log：<span class="path">.minecraft/logs/latest.log</span>（Prism/CurseForge 在該實例的 <span class="path">logs/</span>）</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

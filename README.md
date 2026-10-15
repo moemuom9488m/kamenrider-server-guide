@@ -2,6 +2,8 @@
 
 Minecraft **Java 版 1.21.1** + **NeoForge** + **Kamen Rider Craft** 的私人生存伺服器（最多 4 人）。
 
+> 📖 網頁版：<https://moemuom9488m.github.io/kamenrider-server-guide/>
+>
 > 伺服器位址不公開，請直接向服主索取。
 
 ---
