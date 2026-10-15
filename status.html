@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>假面騎士伺服器狀態</title>
+<meta name="description" content="假面騎士模組生存伺服器的即時狀態">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: status banner, then a grid of metric tiles, then 24h charts. Same tokens as the join guide. */
+:root {
+  --bg: #f4f6f3; --surface: #ffffff; --fg: #1c231d; --muted: #5b675d; --line: #d7ded6;
+  --accent: #2e7d32; --signal: #b3261e; --warn: #a15c00; --code-bg: #eaefe9;
+  --display: "Chakra Petch", "Noto Sans TC", system-ui, sans-serif;
+  --body: "Noto Sans TC", system-ui, -apple-system, "PingFang TC", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121612; --surface: #1a201b; --fg: #e3e9e2; --muted: #9aa69b; --line: #2d362e;
+    --accent: #7cc47f; --signal: #f2a39c; --warn: #f0b860; --code-bg: #222a23; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121612; --surface: #1a201b; --fg: #e3e9e2; --muted: #9aa69b; --line: #2d362e;
+  --accent: #7cc47f; --signal: #f2a39c; --warn: #f0b860; --code-bg: #222a23; color-scheme: dark;
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 40px 16px 64px; display: grid; gap: 28px; }
+h1, h2 { font-family: var(--display); margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(26px, 6vw, 38px); }
+h2 { font-size: 18px; }
+.eyebrow { font-family: var(--display); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+a { color: var(--accent); }
+.banner { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 700; font-size: 20px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }
+.on .dot { background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 25%, transparent); }
+.off .dot { background: var(--signal); }
+.stale .dot { background: var(--warn); }
+.meta { color: var(--muted); font-size: 14px; margin-left: auto; text-align: right; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; gap: 2px; min-width: 0; }
+.tile dt { font-size: 13px; color: var(--muted); }
+.tile dd { margin: 0; font-family: var(--display); font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tile small { color: var(--muted); font-size: 13px; }
+.chart { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; gap: 8px; }
+.chart svg { width: 100%; height: 120px; display: block; }
+.chart .axis { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; font-family: var(--mono); }
+.empty { color: var(--muted); font-size: 14px; }
+.note { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <span class="eyebrow">Kamen Rider Craft · Server Status</span>
+    <h1>伺服器狀態</h1>
+    <p class="note">每分鐘自動更新。想加入請看 <a href="./">進入須知</a>，位址請向服主索取。</p>
+  </header>
+
+  <div id="banner" class="banner">
+    <span class="pill"><span class="dot"></span><span id="state">讀取中…</span></span>
+    <span class="meta" id="meta"></span>
+  </div>
+
+  <dl class="tiles">
+    <div class="tile"><dt>在線玩家</dt><dd id="players">–</dd><small id="players-sub"></small></div>
+    <div class="tile"><dt>遊戲天數</dt><dd id="day">–</dd><small id="day-sub"></small></div>
+    <div class="tile"><dt>TPS（滿分 20）</dt><dd id="tps">–</dd><small id="mspt"></small></div>
+    <div class="tile"><dt>CPU</dt><dd id="cpu">–</dd><small>伺服器程序</small></div>
+    <div class="tile"><dt>記憶體</dt><dd id="mem">–</dd><small>上限 4 GB</small></div>
+    <div class="tile"><dt>已連續運行</dt><dd id="uptime">–</dd><small id="version"></small></div>
+  </dl>
+
+  <section class="chart">
+    <h2>過去 24 小時・在線人數</h2>
+    <div id="chart-players"></div>
+  </section>
+  <section class="chart">
+    <h2>過去 24 小時・TPS</h2>
+    <div id="chart-tps"></div>
+  </section>
+</div>
+
+<script>
+const GIST = "26e3b8e93166b2330033d3c0e3fba360";
+const POLL_MS = 90000;          // GitHub allows 60 unauthenticated API calls per hour per visitor
+const STALE_S = 8 * 60;         // the server pushes at least every 5 minutes while it is up
+const $ = id => document.getElementById(id);
+
+function ago(s) {
+  if (s < 60) return "剛剛";
+  if (s < 3600) return Math.floor(s / 60) + " 分鐘前";
+  if (s < 86400) return Math.floor(s / 3600) + " 小時前";
+  return Math.floor(s / 86400) + " 天前";
+}
+function dur(s) {
+  const d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60);
+  return d ? `${d}天 ${h}時` : h ? `${h}時 ${m}分` : `${m}分`;
+}
+function setText(id, v) { $(id).textContent = v; }
+
+function chart(el, points, max, fmt) {
+  el.replaceChildren();
+  if (points.length < 2) {
+    const p = document.createElement("p"); p.className = "empty"; p.textContent = "資料累積中，伺服器運行一陣子後就會出現。";
+    el.append(p); return;
+  }
+  const W = 600, H = 120, t0 = points[0][0], t1 = points[points.length - 1][0] || t0 + 1;
+  const x = t => (t - t0) / (t1 - t0 || 1) * W, y = v => H - 6 - (v / max) * (H - 12);
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("preserveAspectRatio", "none");
+  svg.setAttribute("role", "img");
+  const d = points.map((p, i) => `${i ? "L" : "M"}${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join("");
+  const area = document.createElementNS(ns, "path");
+  area.setAttribute("d", d + `L${x(t1)},${H}L0,${H}Z`);
+  area.setAttribute("fill", "var(--accent)"); area.setAttribute("opacity", ".12");
+  const line = document.createElementNS(ns, "path");
+  line.setAttribute("d", d); line.setAttribute("fill", "none"); line.setAttribute("stroke", "var(--accent)");
+  line.setAttribute("stroke-width", "2"); line.setAttribute("vector-effect", "non-scaling-stroke");
+  svg.append(area, line);
+  const axis = document.createElement("div"); axis.className = "axis";
+  const tf = t => new Date(t * 1000).toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit" });
+  const peak = Math.max(...points.map(p => p[1]));
+  axis.innerHTML = "";
+  for (const s of [tf(t0), "最高 " + fmt(peak), tf(t1)]) { const sp = document.createElement("span"); sp.textContent = s; axis.append(sp); }
+  el.append(svg, axis);
+}
+
+function render(s) {
+  const age = Math.floor(Date.now() / 1000) - s.updated;
+  const b = $("banner");
+  b.classList.remove("on", "off", "stale");
+  if (s.online && age <= STALE_S) { b.classList.add("on"); setText("state", "運行中"); }
+  else if (s.online) { b.classList.add("stale"); setText("state", "無回應"); }
+  else { b.classList.add("off"); setText("state", "離線"); }
+  setText("meta", s.updated ? "資料更新於 " + ago(age) : "");
+  const live = s.online && age <= STALE_S;
+  setText("players", live && s.players != null ? `${s.players} / ${s.max_players}` : "–");
+  setText("players-sub", live ? (s.players ? "有人在玩！" : "目前沒人在線") : "");
+  setText("day", s.day != null ? "第 " + s.day + " 天" : "–");
+  setText("day-sub", s.time_paused ? "⏸ 沒人在線，時間暫停中" : s.time_paused === false ? "▶ 時間流動中" : "");
+  setText("tps", live && s.tps != null ? s.tps.toFixed(1) : "–");
+  setText("mspt", live && s.mspt != null ? `每 tick ${s.mspt.toFixed(1)} ms` : "");
+  setText("cpu", live && s.cpu_pct != null ? s.cpu_pct + "%" : "–");
+  setText("mem", live && s.mem_mb != null ? (s.mem_mb / 1024).toFixed(2) + " GB" : "–");
+  setText("uptime", live && s.uptime_s != null ? dur(s.uptime_s) : "–");
+  setText("version", s.version ? "Minecraft " + s.version + " · NeoForge" : "");
+  const h = (s.history || []).filter(p => p[0] > Date.now() / 1000 - 86400);
+  chart($("chart-players"), h.map(p => [p[0], p[1]]), Math.max(4, s.max_players || 4), v => v + " 人");
+  chart($("chart-tps"), h.filter(p => p[2] != null).map(p => [p[0], p[2]]), 20, v => v.toFixed(1));
+}
+
+let last = null;
+async function load() {
+  try {
+    const r = await fetch(`https://api.github.com/gists/${GIST}`, { cache: "no-store" });
+    if (r.status === 403 || r.status === 429) { setText("meta", "查詢太頻繁，稍後會自動重試"); return; }
+    if (!r.ok) throw new Error(r.status);
+    const g = await r.json();
+    last = JSON.parse(g.files["status.json"].content);
+    render(last);
+  } catch (e) {
+    setText("meta", "暫時讀不到狀態，稍後自動重試");
+  }
+}
+load();
+setInterval(load, POLL_MS);
+setInterval(() => { if (last) render(last); }, 30000);   // keep "x 分鐘前" fresh between polls
+</script>
+</body>
+</html>
