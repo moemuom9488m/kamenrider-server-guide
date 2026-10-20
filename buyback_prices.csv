@@ -1740,6 +1740,9 @@ T1 普通,1,kamenridercraft:black_ridewatch,Black錶盤,recipe
 T1 普通,1,kamenridercraft:black_switch,Black開關,recipe
 T1 普通,1,kamenridercraft:blackhead,Black頭盔,recipe
 T1 普通,1,kamenridercraft:blacklegs,Black護腿,recipe
+T1 普通,1,kamenridercraft:blacksunhead,Black Sun頭盔,floor;recipe
+T1 普通,1,kamenridercraft:blacksunlegs,Black Sun護腿,floor;recipe
+T1 普通,1,kamenridercraft:blacksuntroso,Black Sun胸甲,floor;recipe
 T1 普通,1,kamenridercraft:blacktorso,Black胸甲,recipe
 T1 普通,1,kamenridercraft:blade_ace_card,KamenRide 劍,recipe
 T1 普通,1,kamenridercraft:blade_ghost_eyecon,Blade眼魂,recipe
@@ -1802,6 +1805,8 @@ T1 普通,1,kamenridercraft:card_warrior_kamen_rider_manga,卡牌戰士假面騎
 T1 普通,1,kamenridercraft:caucasus_all_over,高加索大兜蟲劍,fallback
 T1 普通,1,kamenridercraft:caucasus_solid_shield,高加索大兜蟲之盾,fallback
 T1 普通,1,kamenridercraft:cell_medal_programer,硬幣程式設計器,recipe
+T1 普通,1,kamenridercraft:century_king_moon_driver,世紀王月驅動器,floor;recipe
+T1 普通,1,kamenridercraft:century_king_sun_driver,世紀王陽驅動器,floor;recipe
 T1 普通,1,kamenridercraft:chalice_ridewatch,卡利斯騎士錶盤,recipe
 T1 普通,1,kamenridercraft:chameleon_vistamp,變色龍罪惡印章,fallback
 T1 普通,1,kamenridercraft:change_beetle,覺醒卡片·變化長戟大兜蟲,ore
