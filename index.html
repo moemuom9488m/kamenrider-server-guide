@@ -86,7 +86,7 @@ body { margin: 0; }
     <span class="eyebrow">Kamen Rider Craft · NeoForge</span>
     <h1>假面騎士伺服器進入須知</h1>
     <p class="lead">照著下面的步驟裝好 NeoForge 和四個必備模組，就能連進假面騎士模組生存伺服器。版本要跟伺服器一樣，差一點就會被擋在門外。</p>
-    <p><a href="status.html">→ 查看伺服器即時狀態</a>　<a href="prices.html">→ 騎士道具收購價目</a></p>
+    <p><a href="status.html">→ 查看伺服器即時狀態</a>　<a href="prices.html">→ 騎士道具收購價目</a>　<a href="#pandora">→ 潘朵拉魔塔攻略</a></p>
   </header>
 
   <dl class="spec">
@@ -154,13 +154,40 @@ body { margin: 0; }
   <section>
     <h2><span class="n">進服之後</span>中文翻譯與指南書</h2>
     <ul>
-      <li><b>繁體中文翻譯：</b>第一次進服會跳出「套用假面騎士模組繁體中文翻譯？」，按<b>是</b>就會自動下載並套用（需開著 Tailscale）。接著到「選項 → 語言」選 <b>繁體中文（台灣）</b>。</li>
+      <li><b>繁體中文翻譯：</b>第一次進服會跳出「套用假面騎士模組繁體中文翻譯？」，按<b>是</b>就會自動下載並套用。接著到「選項 → 語言」選 <b>繁體中文（台灣）</b>。</li>
       <li><b>指南書：</b>第一次進服會自動拿到一本 Kamen Rider Craft 指南書，裡面有各騎士的取得與變身方式（內容是英文）。弄丟了可以用 3 張紙 + 1 個皮革 + 1 個騎士電路板（Rider Circuit）無序合成。</li>
       <li><b>騎士變身攻略書：</b>用 1 本書 + 1 個紅石無序合成（要先照 STEP 2 裝好書的資料夾，不然打開是空的）。</li>
       <li><b>死亡不噴裝：</b>伺服器開了防噴（keepInventory），死掉時背包、裝備和經驗都會保留。</li>
       <li><b>騎士交易所：</b>伺服器的騎士交易所有原版與模組村民、礦物兌換商、騎士礦兌換商，以及可以把不要的假面騎士道具換成綠寶石的收購櫃台。價錢請看<a href="prices.html">收購價目表</a>。</li>
       <li><b>時間暫停：</b>伺服器連續 5 分鐘沒人在線時，日夜、天氣和作物生長會暫停；有人進來就恢復。</li>
     </ul>
+  </section>
+
+  <section id="pandora">
+    <h2><span class="n">攻略</span>潘朵拉魔塔與假面騎士Evol</h2>
+    <p>Evol 沒帶道具也打得動，但<b>擊殺時背包裡帶的道具</b>決定它會不會變身、打倒後掉什麼。照下面的順序一階一階拿。</p>
+    <div class="addr">
+      <div><span>潘朵拉魔塔・Evol 頭目召喚方塊（主世界）</span><span class="ip">X 45 / Y 170 / Z 420</span><span>塔的範圍 X 25～64、Z 400～439，塔頂在 Y 160 以上</span></div>
+      <div><span>最近的浮士德基地 Rogue Base・夜霸頭目召喚方塊（主世界）</span><span class="ip">X -903 / Y 77 / Z -753</span><span>距魔塔約 1500 格</span></div>
+    </div>
+    <ol class="steps">
+      <li><b>拿潘多拉魔盒：</b>到浮士德基地打掉「夜霸頭目召喚方塊」召喚夜霸，打倒必掉<b>潘多拉魔盒</b>（另有迷失蝙蝠滿裝瓶罐）。</li>
+      <li><b>爬塔：</b>塔內 4 個試煉生怪磚會生出東都、北都、聖都、堅硬防衛者，打完會噴進化瓶罐或迷失瓶罐。</li>
+      <li><b>召喚 Evol：</b>打掉塔頂的「Evol 頭目召喚方塊」。和平難度不會出現。Evol 血量 200、護甲 3、攻擊 10。</li>
+      <li><b>重複打 Evol 往下拿：</b>帶著上一階的道具再打一次，見下表。每次打 Evol 都需要一個召喚方塊（找另一座魔塔，或請服主重置這座）。</li>
+    </ol>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>背包裡帶著</th><th>Evol 的變化</th><th>打倒後必掉</th></tr></thead>
+        <tbody>
+          <tr><td>潘多拉魔盒</td><td>血量低於 100 變「黑洞形態」（攻擊 12、會飛）</td><td>黑洞扳機</td></tr>
+          <tr><td>黑洞扳機</td><td>不變身</td><td>潘多拉嵌板(黑)</td></tr>
+          <tr><td>潘多拉嵌板(黑)</td><td>血量低於 50 變「Evolto 怪人形態」（攻擊 15、更快）</td><td>銀龍或金兔滿裝瓶罐</td></tr>
+          <tr><td>（不論帶什麼）</td><td>—</td><td>眼鏡蛇進化滿裝瓶罐（3/4）或騎士系統進化滿裝瓶罐（1/4），外加滿裝瓶罐</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><b>建議路線：</b>夜霸 → 魔盒 → Evol（拿扳機）→ Evol（拿嵌板）→ Evol（拿銀龍／金兔）。後兩階 Evol 會變強，帶好裝備和食物再上。</p>
   </section>
 
   <section>
