@@ -71,6 +71,11 @@ td:first-child { font-family: var(--mono); font-size: 14px; white-space: nowrap;
 ul { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 body { margin: 0; }
+.mclist { background: #1e1e1e; border: 2px solid #000; border-radius: 4px; padding: 10px; display: grid; grid-template-columns: 64px 1fr; gap: 4px 12px; align-items: start; font-family: var(--mono); font-size: 14px; line-height: 1.5; color: #aaa; min-width: 0; }
+.mclist img { width: 64px; height: 64px; image-rendering: pixelated; grid-row: span 3; }
+.mclist .name { color: #fff; }
+.mclist .motd { overflow-wrap: anywhere; }
+.mc-c { color: #ff5555; } .mc-f { color: #fff; } .mc-8 { color: #555; } .mc-7 { color: #aaa; } .mc-6 { color: #ffaa00; } .mc-e { color: #ffff55; } .mc-a { color: #55ff55; } .mc-d { color: #ff55ff; }
 .footer { color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -135,6 +140,14 @@ body { margin: 0; }
       <li>把你登入 Tailscale 用的帳號告訴服主，等服主把你加入或把伺服器分享給你。</li>
       <li>開著 Tailscale，在 Minecraft「多人遊戲 → 新增伺服器」輸入服主給你的位址。</li>
     </ol>
+    <p>加好之後，伺服器列表裡會看到這個縮圖和說明文字，認明它就對了（伺服器名稱是你自己取的）：</p>
+    <div class="mclist" role="img" aria-label="伺服器列表顯示：仮面ライダー Craft 縮圖與說明文字">
+      <img src="server-icon.png" alt="" width="64" height="64">
+      <span class="name">假面騎士伺服器</span>
+      <span class="motd"><b class="mc-c">仮面ライダー</b><b class="mc-f"> Craft</b> <span class="mc-8">|</span> <span class="mc-7">NeoForge 1.21.1</span></span>
+      <span class="motd"><span class="mc-6">★ 變身吧！</span> <span class="mc-e">騎士交易所</span><span class="mc-7">・</span><span class="mc-a">綠寶石收購</span><span class="mc-7">・</span><span class="mc-d">騎士礦兌換</span></span>
+    </div>
+    <p class="footer">看不到新縮圖時，在多人遊戲畫面按「重新整理」。</p>
     <p class="note"><b>基岩版不能玩：</b>手機、Switch、PS、Xbox 和 Windows 基岩版都無法連線，模組只支援 Java 版。</p>
   </section>
 
