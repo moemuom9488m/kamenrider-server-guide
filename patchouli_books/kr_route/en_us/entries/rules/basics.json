@@ -1,0 +1,26 @@
+{
+ "name": "通用規則",
+ "icon": "minecraft:book",
+ "category": "patchouli:rules",
+ "sortnum": 0,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "每部作品都一樣：$(li)頭盔 5、胸甲 8、護腿 7 個基礎素材$(li)腰帶：8 個基礎素材圍一圈，中間放關鍵道具$(br2)腰帶穿在$(bold)靴子欄$()，四件穿齊就會變身。"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "一套大約要 28 個基礎素材。$(br2)同作品的副騎士共用盔甲，只要換腰帶：一樣 8 個基礎素材，中間換成那位騎士自己的道具。"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:misc/rider_circuit",
+   "recipe2": "kamenridercraft:misc/base_sword",
+   "title": "共用零件"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:misc/monitor"
+  }
+ ]
+}

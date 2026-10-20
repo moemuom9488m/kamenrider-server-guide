@@ -1,0 +1,26 @@
+{
+  "_說明": [
+    "左邊是輪盤項目的按鍵 ID，右邊是要顯示的圖示。",
+    "圖示可以填遊戲物品 ID，例如 minecraft:filled_map（minecraft: 可省略）。",
+    "也可以填 file:圖片檔名.png，圖片放在這個資料夾裡，建議用正方形 PNG（16x16、32x32 等）。",
+    "Controlify 內建項目的 ID 是 controlify:xxx，其他模組的按鍵是 fabric-key-binding-api-v1:按鍵名稱（小寫）。",
+    "按鍵 ID 可以在 config/controlify.json 的 radial_menu 或 bindings 裡找到。",
+    "存檔後下次打開輪盤就會套用，不用重開遊戲。刪掉某一行就會恢復原本的圖示。"
+  ],
+  "icons": {
+    "fabric-key-binding-api-v1:gui.xaero_open_map": "file:globe.png",
+    "fabric-key-binding-api-v1:gui.xaero_waypoints_key": "minecraft:compass",
+    "fabric-key-binding-api-v1:gui.xaero_new_waypoint": "file:pin.png",
+    "fabric-key-binding-api-v1:gui.xaero_instant_waypoint": "minecraft:recovery_compass",
+    "fabric-key-binding-api-v1:gui.xaero_enlarge_map": "minecraft:map",
+    "fabric-key-binding-api-v1:gui.xaero_minimap_settings": "minecraft:comparator",
+    "fabric-key-binding-api-v1:gui.xaero_open_settings": "minecraft:cartography_table",
+    "fabric-key-binding-api-v1:gui.xaero_toggle_entity_radar": "minecraft:zombie_head",
+    "fabric-key-binding-api-v1:gui.xaero_toggle_light_overlay": "minecraft:torch",
+    "fabric-key-binding-api-v1:key.freecam.toggle": "minecraft:ender_eye",
+    "fabric-key-binding-api-v1:key.jei.toggleoverlay": "minecraft:knowledge_book",
+    "fabric-key-binding-api-v1:iris.keybind.toggleshaders": "minecraft:sunflower",
+    "fabric-key-binding-api-v1:iris.keybind.shaderpackselection": "minecraft:painting",
+    "fabric-key-binding-api-v1:key.camerautils.zoom": "minecraft:spyglass"
+  }
+}

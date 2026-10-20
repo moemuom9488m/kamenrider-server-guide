@@ -1,0 +1,28 @@
+{
+ "name": "地表特殊建築",
+ "icon": "minecraft:filled_map",
+ "category": "patchouli:places",
+ "sortnum": 8,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)空我之墓：河流$(li)Castle Doran、Shoodoran：森林類$(li)Pandora Tower、Faust Base：平原、森林、莽原$(li)Daybreak Town：森林、平原$(li)Gara 的江戶村：森林、平原",
+   "title": "主世界（一）"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)Jyamar Garden：叢林$(li)Ginga's Meteor：山峰、雪坡、櫻花林$(li)Overlord 遺物：海灘$(li)Earth's Core：繁茂洞穴、鐘乳石洞、深暗之域$(li)舞台秀 Stageshow：森林、平原、莽原村莊附近",
+   "title": "主世界（二）"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)God Speed Love（Kabuto）$(li)Downfall Warehouse（Build）$(br2)兩個都在地獄。",
+   "title": "地獄"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "另外還有乾燥與溫帶的「Ruins」遺跡建築，原書完全沒有介紹。$(4)※原書沒寫$()",
+   "title": "未說明的建築"
+  }
+ ]
+}

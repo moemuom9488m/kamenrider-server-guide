@@ -1,0 +1,29 @@
+{
+ "name": "機器總覽",
+ "icon": "kamenridercraft:monitor",
+ "category": "patchouli:materials",
+ "sortnum": 1,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "從平成二期開始，很多變身道具要「空白品 + 機器」抽出來。直接拿礦物或碎片是$(bold)不能變身$()的。$(br2)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "為什麼需要機器"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)W：Gaia Memory Refiner$(li)Wizard：Gem Chisel（戒指）$(li)Fourze：Astroswitch Programmer$(li)Drive：Shift Chassis Assembler$(li)Ghost：Monolith$(li)Ex-Aid：Game Creator$(li)Build：Fullbottle Purifier",
+   "title": "機器一覽（一）"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)Zero-One：HIDEN 3D Printer$(li)Saber：Book Analyzer$(li)Revice：Vistamp Bar$(li)Gotchard：Chemy Riser$(li)Zeztz：Capsem Dropper$(li)G3：G-Chip Programmer$(li)Birth：Cell Medal Programmer",
+   "title": "機器一覽（二）"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:misc/rider_circuit",
+   "recipe2": "kamenridercraft:misc/monitor",
+   "title": "共用零件"
+  }
+ ]
+}

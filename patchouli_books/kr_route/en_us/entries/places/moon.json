@@ -1,0 +1,39 @@
+{
+ "name": "月球",
+ "icon": "kamenridercraft:gate_switch",
+ "category": "patchouli:places",
+ "sortnum": 2,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:gate_switch",
+   "text": "拿在手上使用就會傳送到月球。在月球再用一次回地球。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "title": "Gate Switch"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:fourze/gate_switch",
+   "title": "Gate Switch 配方"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Blank Switch 只有三個來源：Super GingaOh、Rabbit Hutch、M-BUS。後兩個都在月球上，所以$(bold)第一個只能打 Super GingaOh$()。$(4)※原書沒寫$()",
+   "title": "第一個 Blank Switch"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Super GingaOh 要自己做 Boss Block 召喚，需要：$(li)Rider Circuit$(li)4 Cell Alloy Ingot$(li)Solu Switch$(li)Same、Kujira、Ookamiuo Medal（OOO 系）$(br2)做好後挖掉方塊就會召喚。",
+   "title": "Super GingaOh"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:fourze/super_gingaoh_boss_block",
+   "title": "GingaOh Boss Block"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)低重力（遊戲規則 doMoonGravity）$(li)Rabbit Hutch、M-BUS：有 Astroswitch Programmer；M-BUS 寶箱約 14 Blank Switch$(li)Kiva Crater：Arc Boss Block，可拿 Kiva 飛行型態的笛子",
+   "title": "月球上有什麼"
+  }
+ ]
+}

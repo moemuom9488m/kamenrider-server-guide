@@ -1,0 +1,49 @@
+{
+ "name": "地表礦物",
+ "icon": "kamenridercraft:gaiamemoryblock",
+ "category": "patchouli:materials",
+ "sortnum": 0,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "六種礦都生成在主世界 $(bold)Y -64 到 80$()，跟鐵礦差不多深。$(br2)都要$(bold)鐵鎬以上$()。$(br2)深板岩版（Y 0 以下）通常掉稀有道具的機率較高。",
+   "title": "總覽"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:stone_kuuga",
+   "text": "一般：Growing 57%、Mighty 22%、Dragon / Pegasus / Titan 各 7%$(br)深板岩：Growing 40%、Mighty 30%、其他各 10%",
+   "title": "空我礦 Kuuga Ore"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:stone_blade",
+   "text": "一般：空白卡 58%、Change Beetle 5%、Change Stag 5%、其他卡 1～3%$(br)深板岩：空白卡 16%，各種 Change 卡機率提高（Beetle 9%）",
+   "title": "劍礦 Blade Ore"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:stone_hibiki",
+   "text": "一般：Red Onishi$(br)深板岩：Red Onishi 60%、Cyan Onishi 40%",
+   "title": "鬼礦 Oni Ore"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:stone_kiva",
+   "text": "一般：Fuestle 66.7%、Wake Up Fuestle (Kiva) 8.9%$(br)深板岩：Fuestle 20%、Wake Up 11.4%，稀有笛子更多",
+   "title": "笛礦 Fuestle Ore"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:gaiamemoryblock",
+   "text": "一般與深板岩都掉 1 個 Gaia Memory Shard（碎片）。$(br)碎片本身$(bold)不能變身$()，要做成未精煉記憶體再拿去精煉機。",
+   "title": "蓋亞記憶體礦 Gaia Memory Ore"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:wizardgemblock",
+   "text": "一般：橘 50%、紅藍綠黃各 11.9%、紫 2.4%$(br)深板岩：五色各 19.2%、紫 3.8%",
+   "title": "魔法石礦 Magic Stone Ore"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "Zero-One：程式鑰匙",
+ "icon": "kamenridercraft:hiden_3d_printer",
+ "category": "patchouli:materials",
+ "sortnum": 9,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Magia → Hiden Metal$(li)Hiden Metal + Rider Circuit → Blank Progrisekey$(li)做 HIDEN 3D Printer$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:zero_one/blank_progrisekey",
+   "recipe2": "kamenridercraft:zero_one/hiden_3d_printer",
+   "title": "鑰匙與印表機"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Rising Hopper 26.3%、Biting Shark / Flaming Tiger / Breaking Mammoth / Hopping Kangaroo / Flying Falcon 各 13.2%。$(br2)Daybreak Town 的 ZAIA 3D Printer 抽 ZAIA 系鑰匙。",
+   "title": "機率"
+  }
+ ]
+}

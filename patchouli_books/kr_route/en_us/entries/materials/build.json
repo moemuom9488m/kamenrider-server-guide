@@ -1,0 +1,24 @@
+{
+ "name": "Build：滿瓶",
+ "icon": "kamenridercraft:fullbottle_purifier",
+ "category": "patchouli:materials",
+ "sortnum": 8,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Guardian → Empty Bottle、Nebula Gas Sample$(li)Nebula Gas + 3 空瓶 → Smash Bottle$(li)做 Fullbottle Purifier（或在 Faust Base 找）$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:build/smash",
+   "recipe2": "kamenridercraft:build/fullbottle_purifier",
+   "title": "Smash Bottle 與淨化器"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "60 種滿瓶各 1.6%，機率很低。Rabbit、Tank 也可以直接打 Touto Guardian、Needle Smash 拿。",
+   "title": "機率"
+  }
+ ]
+}

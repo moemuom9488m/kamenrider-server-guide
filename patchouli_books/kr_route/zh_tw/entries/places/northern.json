@@ -1,0 +1,24 @@
+{
+ "name": "北方基地",
+ "icon": "kamenridercraft:book_gate_wonder_ride_book",
+ "category": "patchouli:places",
+ "sortnum": 5,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:book_gate_wonder_ride_book",
+   "text": "拿在手上使用進入北方基地維度。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "title": "Book Gate"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Shimi 掉落$(li)城市維度的 Fantastic Bookstore Kamiyama（書店）$(li)北方基地寶箱",
+   "title": "怎麼拿"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "基地裡有 Sword of Logos Book Analyzer（抽 Brave Dragon 那台），寶箱有 Blank Wonder Ride Book。",
+   "title": "裡面有什麼"
+  }
+ ]
+}

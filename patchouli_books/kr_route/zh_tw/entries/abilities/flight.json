@@ -1,0 +1,29 @@
+{
+ "name": "飛行型態",
+ "icon": "minecraft:elytra",
+ "category": "patchouli:abilities",
+ "sortnum": 0,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "有 Flying 效果的型態可以像創造模式一樣飛。$(br2)坐騎（機車）都不會飛。",
+   "title": "說明"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)Revi：Eagle Genome（Eagle Vistamp）、Ptera Genome$(li)Saber：Dragon Eagle（Storm Eagle 書）$(li)Build：HawkGatling（Taka + Gatling）$(li)Gotchard：Needlehawk",
+   "title": "推薦"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)OOO：Tajadol（Taka、Kujaku、Condor，要 O Scanner）$(li)Ghost：Houdini 魂$(li)Fourze：Gyro Module$(li)Kiva：Flight Style（月球打 Arc 拿笛子，Emperor 時使用）",
+   "title": "其他"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:eagle_vistamp",
+   "text": "Vistamp Bar 抽，6.2%。最容易入手的飛行型態。",
+   "title": "最推薦"
+  }
+ ]
+}

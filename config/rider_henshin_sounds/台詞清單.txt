@@ -1,0 +1,31 @@
+﻿# 單支記憶體（右鍵或插入時）
+cyclone_memory.ogg	Cyclone!
+heat_memory.ogg	Heat!
+luna_memory.ogg	Luna!
+fang_memory.ogg	Fang!
+joker_memory.ogg	Joker!
+metal_memory.ogg	Metal!
+trigger_memory.ogg	Trigger!
+xtreme_memory.ogg	Xtreme!
+accel_memory.ogg	Accel!
+skull_memory.ogg	Skull!
+eternal_memory.ogg	Eternal!
+
+# W 組合變身（變身完成、或變身中換記憶體時）
+wdriver_cyclone_memory_joker_memory.ogg	CycloneJoker!
+wdriver_cyclone_memory_metal_memory.ogg	CycloneMetal!
+wdriver_cyclone_memory_trigger_memory.ogg	CycloneTrigger!
+wdriver_heat_memory_joker_memory.ogg	HeatJoker!
+wdriver_heat_memory_metal_memory.ogg	HeatMetal!
+wdriver_heat_memory_trigger_memory.ogg	HeatTrigger!
+wdriver_joker_memory_luna_memory.ogg	LunaJoker!
+wdriver_luna_memory_metal_memory.ogg	LunaMetal!
+wdriver_luna_memory_trigger_memory.ogg	LunaTrigger!
+wdriver_fang_memory_joker_memory.ogg	FangJoker!
+wdriver_fang_memory_metal_memory.ogg	FangMetal!
+wdriver_fang_memory_trigger_memory.ogg	FangTrigger!
+
+# 其他
+wdriver.ogg	找不到組合檔時的預設變身音（目前是 CYCLONE JOKER）
+wdriver_standby.ogg	變身待機音
+wdriver_off.ogg	解除變身

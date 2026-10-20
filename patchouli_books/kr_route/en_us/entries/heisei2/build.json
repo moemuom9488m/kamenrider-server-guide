@@ -1,0 +1,53 @@
+{
+ "name": "Build",
+ "icon": "kamenridercraft:build_driver",
+ "category": "patchouli:heisei2",
+ "sortnum": 18,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:build_driver",
+   "title": "Kamen Rider Build",
+   "text": "這條腰帶穿在靴子欄，再穿上同作品的三件盔甲就會變身。$(br2)腰帶是 7 空瓶 + Rabbit + Tank。"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:build/build_driver",
+   "title": "腰帶配方"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:full_bottle",
+   "title": "基礎素材",
+   "text": "打各 Guardian、Smash、Blood Stalk；Pandora Tower 試煉獎勵。"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:rabbit_full_bottle",
+   "title": "關鍵道具",
+   "text": "打 Touto Guardian、Needle Smash；或 Smash Bottle 點 Fullbottle Purifier（1.6%）。"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:tank_full_bottle",
+   "title": "關鍵道具",
+   "text": "同 Rabbit，另外 Downfall Guardian 也會掉。"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:build/smash",
+   "recipe2": "kamenridercraft:build/fullbottle_purifier",
+   "title": "機器與相關配方"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:build/buildhead",
+   "recipe2": "kamenridercraft:build/buildtroso",
+   "title": "盔甲配方"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:build/buildlegs"
+  }
+ ]
+}

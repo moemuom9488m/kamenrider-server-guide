@@ -1,0 +1,24 @@
+{
+ "name": "Drive：Shift Car",
+ "icon": "kamenridercraft:shift_chassis_assembler",
+ "category": "patchouli:materials",
+ "sortnum": 5,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Roidmude → Shift Alloy$(li)打 Mashin Chaser → Proto Shift Speed$(li)做 Shift Chassis Assembler$(li)Rider Circuit + Shift Alloy → Drive System Car$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:drive/shift_chassis_assembler",
+   "recipe2": "kamenridercraft:drive/drive_system_car",
+   "title": "機器與車"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Drive System Car：Shift Speed 11.6%、Max Flare / Funky Spike / Midnight Shadow 各 5.4%$(br2)NEXT System Bike：Signal Mach 28.6%（Mach 用）",
+   "title": "機率"
+  }
+ ]
+}

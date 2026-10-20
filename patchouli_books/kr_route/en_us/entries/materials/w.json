@@ -1,0 +1,29 @@
+{
+ "name": "W：蓋亞記憶體",
+ "icon": "kamenridercraft:gaia_memory_refiner",
+ "category": "patchouli:materials",
+ "sortnum": 2,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)挖 Gaia Memory Ore → 碎片$(li)碎片 + 鐵錠 → 銀色未精煉記憶體$(li)碎片 + 金錠 → 金色未精煉記憶體$(li)做 Gaia Memory Refiner$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:w/gaia_memory_refiner",
+   "recipe2": "kamenridercraft:w/unrefined_memory_s",
+   "title": "精煉機與銀色"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:w/unrefined_memory_g",
+   "title": "金色"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "銀色：Cyclone 31.7%、Heat 15.9%、Luna 15.9%、Skull / Eternal / Prism / Engine 各 7.9%$(br2)金色：Joker 41.7%、Metal 20.8%、Trigger 20.8%、Accel 10.4%$(br2)T2 未精煉（打 Eternal）：T2 系列記憶體",
+   "title": "機率"
+  }
+ ]
+}

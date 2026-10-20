@@ -1,0 +1,24 @@
+{
+ "name": "回家戒指",
+ "icon": "kamenridercraft:teleport_ring",
+ "category": "patchouli:places",
+ "sortnum": 1,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:teleport_ring",
+   "text": "使用後回到出生點，在任何維度迷路都能救命。",
+   "title": "Teleport Wizard Ring"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "紫色 Unknown Wizard Ring 開出，機率 20%。$(br2)紫色戒指 = 鐵錠 + Violet Magic Stone + Gem Chisel。$(br2)其他 20%：Dark、Explosion、Eclipse、Golem 戒指。",
+   "title": "怎麼拿"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:wizard/unknown_violet_ring",
+   "title": "紫色未知戒指"
+  }
+ ]
+}

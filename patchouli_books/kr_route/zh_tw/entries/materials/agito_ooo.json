@@ -1,0 +1,19 @@
+{
+ "name": "G3 與 Birth 晶片",
+ "icon": "kamenridercraft:g_chip_programer",
+ "category": "patchouli:materials",
+ "sortnum": 14,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)Agito 的 G3 系列：8 Blank G-System Chip + Monitor → G-Chip Programmer，空白晶片點機器 → G3 晶片 50%$(li)OOO 的 Birth：8 Cell Alloy Ingot + Monitor → Cell Medal Programmer，Cell Medal 點機器 → Birth 用 Medal",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:agito/g_chip_programer",
+   "recipe2": "kamenridercraft:ooo/cell_medal_programer",
+   "title": "兩台機器"
+  }
+ ]
+}

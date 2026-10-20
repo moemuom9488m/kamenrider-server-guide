@@ -1,0 +1,24 @@
+{
+ "name": "Wizard：魔法戒指",
+ "icon": "kamenridercraft:wizard_gem_crafting_chisel",
+ "category": "patchouli:materials",
+ "sortnum": 3,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)挖 Magic Stone Ore → 各色魔法石$(li)做 Gem Chisel$(li)鐵錠 + 某色魔法石 + Gem Chisel → 該色 Unknown Wizard Ring$(li)拿在手上使用就會開出戒指",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:wizard/wizard_gem_crafting_chisel",
+   "recipe2": "kamenridercraft:wizard/unknown_red_ring",
+   "title": "鑿子與紅色戒指"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)紅：Flame 50%（Wizard 腰帶要用）$(li)紫：Teleport 20%（回家戒指）$(li)其他顏色開出對應屬性的 Style 戒指",
+   "title": "開出什麼"
+  }
+ ]
+}

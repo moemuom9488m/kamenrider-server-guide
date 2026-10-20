@@ -1,0 +1,29 @@
+{
+ "name": "Gotchard：鍊金卡",
+ "icon": "kamenridercraft:chemy_riser",
+ "category": "patchouli:materials",
+ "sortnum": 12,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Malgam → Blank Ride Chemy Card$(li)Alchemist Ring (Empty) + 某色魔法石 → 該色鍊金戒指$(li)做 Chemy Riser（橘魔法石）或 Supana 版（紫魔法石）$(li)在 Chemy Riser 裡放空白卡 + 戒指 → 鍊金卡",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:gotchard/chemy_riser",
+   "recipe2": "kamenridercraft:gotchard/chemy_riser_supana",
+   "title": "兩種 Chemy Riser"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:gotchard/alchemist_ring_blue",
+   "title": "藍色戒指"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "一般版：藍＝昆蟲、綠＝植物、紅＝動物、紫＝器物、橘＝幻想$(br2)Supana 版：藍＝交通工具（Steamliner）、綠＝職業、紅＝古代、紫＝神祕、橘＝宇宙",
+   "title": "戒指顏色"
+  }
+ ]
+}

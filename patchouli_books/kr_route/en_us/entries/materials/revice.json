@@ -1,0 +1,23 @@
+{
+ "name": "Revice：印章",
+ "icon": "kamenridercraft:vistamp_bar",
+ "category": "patchouli:materials",
+ "sortnum": 11,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Giff Junior → Blank Vistamp、Rex Vistamp$(li)做 Vistamp Bar$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:revice/vistamp_bar",
+   "title": "Vistamp Bar"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Rex 8.2%、Eagle（會飛）6.2%、Mammoth / Megalodon 各 6.2%、Ptera（會飛）3.4%。",
+   "title": "機率"
+  }
+ ]
+}

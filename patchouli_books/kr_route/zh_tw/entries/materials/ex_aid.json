@@ -1,0 +1,23 @@
+{
+ "name": "Ex-Aid：卡帶",
+ "icon": "kamenridercraft:gamecreator",
+ "category": "patchouli:materials",
+ "sortnum": 7,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Bugster → Unfinished Gashat$(li)做 Game Creator$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:exaid/gamecreator",
+   "title": "Game Creator"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Mighty Action X 13.6%、Taddle Quest / Bang Bang Shooting / Bakusou Bike 各 10.2%。$(br2)Ganbarizing Machine 可抽歷代騎士卡帶。",
+   "title": "機率"
+  }
+ ]
+}

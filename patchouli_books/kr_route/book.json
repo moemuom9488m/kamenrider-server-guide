@@ -1,0 +1,8 @@
+{
+ "name": "騎士變身攻略",
+ "landing_text": "平成到令和每位主角騎士的變身路線。$(br2)每一篇依序是：腰帶配方、基礎素材、關鍵道具、機器配方、盔甲配方。$(br2)物品名稱保留英文，方便用 JEI 搜尋。",
+ "version": 1,
+ "model": "patchouli:book_red",
+ "show_progress": false,
+ "use_resource_pack": false
+}

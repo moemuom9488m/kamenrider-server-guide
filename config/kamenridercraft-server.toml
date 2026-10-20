@@ -1,0 +1,8 @@
+# (default: true) Should Parado spawn when using the Mighty Brothers XX and Knock Out Fighter 2 Gashats?
+mightyBrotherSpawning = true
+# (default: true) Should using a DecadeArmor Ex-Aid form spawn the other side?
+decadeExAidSpawning = true
+# (default: true) Should Vice spawn if you are playing as Kamen Rider Revi?
+viceSpawning = true
+# (default: true) Should Lovekov spawn if you are playing as Kamen Rider Jeanne?
+lovekovSpawning = true

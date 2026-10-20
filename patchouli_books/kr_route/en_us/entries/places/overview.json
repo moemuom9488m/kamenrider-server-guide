@@ -1,0 +1,18 @@
+{
+ "name": "傳送總覽",
+ "icon": "minecraft:ender_pearl",
+ "category": "patchouli:places",
+ "sortnum": 0,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)月球：Gate Switch$(li)時之砂漠：Rider Pass$(li)赫爾海姆：穿過 Helheim Crack$(li)北方基地：Book Gate 書$(li)城市維度：White Woz Time Mazine Ridewatch$(li)夢境：戴 Zeztz 系腰帶睡覺",
+   "title": "有哪些維度"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "用傳送道具過去的維度，通常再用一次同一個道具就會回來。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()$(br2)保險做法：身上帶一個 $(l:places/home)Teleport Wizard Ring$()，用了會直接回出生點。",
+   "title": "怎麼回來"
+  }
+ ]
+}

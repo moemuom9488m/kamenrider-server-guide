@@ -1,0 +1,29 @@
+{
+ "name": "時之砂漠",
+ "icon": "kamenridercraft:rider_pass",
+ "category": "patchouli:places",
+ "sortnum": 3,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:rider_pass",
+   "text": "拿在手上使用進入時之砂漠（Sands of Time），再用一次回來。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "title": "Rider Pass"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:den_o/rider_pass",
+   "title": "Rider Pass 配方"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "8 Imagin Sand + 任何一種門。$(br2)Imagin Sand 打 Mole Imagin（沙漠、海灘、針葉林、惡地）。",
+   "title": "材料"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "$(li)各 DenLiner：寶箱有 Rider Ticket 與 Imagin 票$(li)KingLiner：DenKamen Sword$(li)ZeroLiner：Zeronos 卡$(li)GaohLiner：Gaoh Boss Block（Rider Ticket 來源）",
+   "title": "裡面的列車"
+  }
+ ]
+}

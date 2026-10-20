@@ -1,0 +1,67 @@
+# Default: 0.0
+# Range: 0.0 ~ 1.0
+smoothness = 0.0
+# Default: 40.0
+# Range: 1.0 ~ 1000.0
+min_smoothness = 40.0
+# Default: 100.0
+# Range: 1.0 ~ 1000.0
+max_smoothness = 100.0
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+cinematic_camera_modifier = 1.0
+# Default: 0.1
+# Range: 0.0 ~ 2.0
+zoom = 0.1
+# Default: 0.01
+# Range: 0.001 ~ 1.0
+zoom_sensitivity = 0.01
+# Default: 0.0
+# Range: -32.0 ~ 32.0
+third_person_offset = 0.0
+# Default: 0.1
+# Range: 0.001 ~ 1.0
+third_person_offset_sensitivity = 0.1
+# Default: -4.0
+# Range: -100.0 ~ 100.0
+third_person_cam_1_offset_x = -4.0
+# Default: 0.0
+# Range: -100.0 ~ 100.0
+third_person_cam_1_offset_y = 0.0
+# Default: 0.0
+# Range: -100.0 ~ 100.0
+third_person_cam_1_offset_z = 0.0
+third_person_cam_1_inverted = false
+third_person_cam_1_hide_gui = false
+# Default: 0.0
+# Range: -90.0 ~ 90.0
+third_person_cam_1_rotation_x = 0.0
+# Default: -4.0
+# Range: -100.0 ~ 100.0
+third_person_cam_2_offset_x = -4.0
+# Default: 0.0
+# Range: -100.0 ~ 100.0
+third_person_cam_2_offset_y = 0.0
+# Default: 0.0
+# Range: -100.0 ~ 100.0
+third_person_cam_2_offset_z = 0.0
+third_person_cam_2_inverted = false
+third_person_cam_2_hide_gui = false
+# Default: 0.0
+# Range: -90.0 ~ 90.0
+third_person_cam_2_rotation_x = 0.0
+#Possible values are: LEFT_CTRL, RIGHT_CTRL, CTRL, LEFT_ALT, RIGHT_ALT, ALT, LEFT_SHIFT, RIGHT_SHIFT, SHIFT
+#Allowed Values: LEFT_CTRL, RIGHT_CTRL, CTRL, LEFT_ALT, RIGHT_ALT, ALT, LEFT_SHIFT, RIGHT_SHIFT, SHIFT
+modifier_key = "RIGHT_ALT"
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+gui_opacity = 1.0
+# Default: 1.0
+# Range: 0.01 ~ 2.0
+zoom_animation_from = 1.0
+# Default: 0.1
+# Range: 0.01 ~ 2.0
+zoom_animation_to = 0.1
+# Default: 200
+# Range: > 1
+zoom_animation_duration = 200

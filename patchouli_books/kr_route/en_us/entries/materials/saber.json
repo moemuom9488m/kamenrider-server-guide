@@ -1,0 +1,23 @@
+{
+ "name": "Saber：奇幻騎士書",
+ "icon": "kamenridercraft:sword_of_logos_book_analyzer",
+ "category": "patchouli:materials",
+ "sortnum": 10,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Shimi → Blank Wonder Ride Book$(li)做 Book Analyzer（或在北方基地找）$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:saber/sword_of_logos_book_analyzer",
+   "title": "Book Analyzer"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Brave Dragon 11%、Lion Senki 9.2%、Lamp Do Alangina 9.2%、Storm Eagle（會飛）5.5%。",
+   "title": "機率"
+  }
+ ]
+}

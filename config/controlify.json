@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "hd_haptic": {
+        "enabled": true
+      },
+      "gyro": {
+        "invert_yaw": false,
+        "button_mode": "on",
+        "yaw_mode": "yaw",
+        "flick_stick": false,
+        "look_sensitivity": 2.0,
+        "relative_mode": false,
+        "invert_pitch": false
+      },
+      "bluetooth_device": {
+        "dont_show_warning": false
+      },
+      "generic": {
+        "disable_fly_drifting": false,
+        "guide": {
+          "verbosity": "full",
+          "show_ingame_guide": true,
+          "ingame_guide_bottom": false,
+          "show_screen_guides": true
+        },
+        "keyboard": {
+          "show_on_screen_keyboard": false,
+          "hint_cursor": true,
+          "hint_command_suggester": true,
+          "hint_sign_line": true
+        },
+        "auto_jump": true,
+        "toggle_sprint": true,
+        "toggle_sneak": false
+      },
+      "input": {
+        "radial_menu": {
+          "actions": [
+            "controlify:toggle_hud_visibility",
+            "controlify:change_perspective",
+            "controlify:drop_stack",
+            "fabric-key-binding-api-v1:gui.xaero_waypoints_key",
+            "controlify:swap_hands",
+            "controlify:pick_block",
+            "controlify:take_screenshot",
+            "fabric-key-binding-api-v1:gui.xaero_open_map"
+          ],
+          "button_focus_timeout_ticks": 20
+        },
+        "button_activation_threshold": 0.5,
+        "keep_default_bindings": false,
+        "bindings": {
+          "controlify:drop_inventory": {},
+          "controlify_radial_icons:map_zoom_out": {
+            "button": "controlify:button/back"
+          },
+          "controlify:vmouse_toggle": {
+            "button": "controlify:button/guide"
+          },
+          "controlify:use": {
+            "button": "controlify:button/east"
+          },
+          "controlify:gyro": {
+            "button": "controlify:button/east"
+          },
+          "controlify_radial_icons:map_zoom_in": {
+            "button": "controlify:button/start"
+          },
+          "controlify:attack": {
+            "axis": "controlify:axis/right_trigger"
+          },
+          "controlify:radial_menu": {
+            "button": "controlify:button/left_stick"
+          },
+          "controlify:open_chat": {},
+          "fabric-key-binding-api-v1:gui.xaero_zoom_out": {
+            "button": "controlify:button/back"
+          },
+          "controlify:sneak": {
+            "axis": "controlify:axis/left_trigger"
+          },
+          "fabric-key-binding-api-v1:gui.xaero_alternative_list_players": {
+            "button": "controlify:button/dpad_up"
+          },
+          "controlify:show_player_list": {},
+          "fabric-key-binding-api-v1:gui.xaero_zoom_in": {
+            "button": "controlify:button/start"
+          },
+          "controlify:inv_select": {
+            "button": "controlify:button/east"
+          },
+          "controlify:change_perspective": {},
+          "controlify:pause": {
+            "button": "controlify:button/guide"
+          },
+          "controlify:gui_press": {
+            "button": "controlify:button/east"
+          },
+          "controlify:sprint": {},
+          "controlify:vmouse_lclick": {
+            "button": "controlify:button/east"
+          },
+          "controlify:gui_back": {
+            "button": "controlify:button/south"
+          },
+          "fabric-key-binding-api-v1:gui.xaero_new_waypoint": {
+            "button": "controlify:button/dpad_right"
+          }
+        },
+        "sensitivity": {
+          "is_lce": true,
+          "default_deadzone": 0.12,
+          "deadzones": {
+            "controlify:right_stick": 0.06,
+            "controlify:left_stick": 0.08
+          },
+          "reduce_aiming": true,
+          "look_curve": "standard",
+          "horizontal": 1.5,
+          "vertical": 1.5,
+          "vertical_invert": false,
+          "virtual_mouse": 1.0
+        }
+      },
+      "rumble": {
+        "enabled": false
+      }
+    }
+  ],
+  "global": {
+    "keyboard_movement": false,
+    "keyboard_movement_whitelist": [],
+    "seen_servers": [
+      
+    ],
+    "show_splitscreen_ad": true,
+    "notify_low_battery": true,
+    "ingame_button_guide_scale": 1.0,
+    "use_enhanced_steam_deck_driver": true,
+    "reach_around": "singleplayer_and_lan",
+    "allow_server_rumble": true,
+    "extra_ui_sounds": true,
+    "virtual_mouse_screens": [
+      "net.minecraft.client.gui.screens.inventory.AbstractContainerScreen"
+    ],
+    "mixed_input": false,
+    "out_of_focus_input": false
+  },
+  "devices": {
+    "b0a1825b4af62384986b1307bf8f34f9": {
+      "gyro_calibration": {}
+    }
+  }
+}

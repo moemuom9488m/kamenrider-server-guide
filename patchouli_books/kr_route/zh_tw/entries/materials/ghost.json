@@ -1,0 +1,18 @@
+{
+ "name": "Ghost：眼魂",
+ "icon": "kamenridercraft:monolith",
+ "category": "patchouli:materials",
+ "sortnum": 6,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Gamma Commando → Blank Ghost Eyecon$(li)拿空白眼魂對$(bold)一般方塊$()使用 → Ore 眼魂 42.1%$(li)做 Monolith，空白眼魂對 Monolith 使用 → 偉人眼魂（Musashi、Houdini 等）",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:ghost/monolith",
+   "title": "Monolith"
+  }
+ ]
+}

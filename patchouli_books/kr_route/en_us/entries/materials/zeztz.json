@@ -1,0 +1,24 @@
+{
+ "name": "Zeztz：膠囊",
+ "icon": "kamenridercraft:capsem_dropper",
+ "category": "patchouli:materials",
+ "sortnum": 13,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "$(li)打 Nox Knight → CODE Capsem$(li)做 Gashapon Machine$(li)8 CODE Capsem + Gashapon Machine → Capsem Dropper$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "title": "流程"
+  },
+  {
+   "type": "patchouli:crafting",
+   "recipe": "kamenridercraft:misc/block/gashapon_machine",
+   "recipe2": "kamenridercraft:zeztz/capsem_dropper",
+   "title": "轉蛋機與掉落機"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "Impact 16.1%、Stream / Recovery / Wonder 各 11.3%、其他 8.1%。",
+   "title": "機率"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "夢境維度",
+ "icon": "kamenridercraft:zeztz_driver",
+ "category": "patchouli:places",
+ "sortnum": 7,
+ "pages": [
+  {
+   "type": "patchouli:text",
+   "text": "穿著 Zeztz 系腰帶（Zeztz Driver、Nox Driver、Knight Invoker 等）在床上睡覺，會被送進夢境維度。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "title": "怎麼進去"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:zeztz_driver",
+   "text": "最容易取得的入夢腰帶。做法見「令和 → Zeztz」。",
+   "title": "Zeztz Driver"
+  },
+  {
+   "type": "patchouli:text",
+   "text": "會隨機落在惡夢建築：Nightmare Garden、Nightmare Prison、Nightmare City，特定條件下是 Nightmare Warehouse。$(br2)怎麼醒來程式碼看不出確定條件，建議帶 Teleport Wizard Ring。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "title": "夢裡有什麼"
+  }
+ ]
+}
