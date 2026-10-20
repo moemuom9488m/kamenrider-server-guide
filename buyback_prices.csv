@@ -1626,6 +1626,9 @@ T1 普通,1,kamenridercraft:agitolegs,亞極陀護腿,recipe
 T1 普通,1,kamenridercraft:agitotroso,亞極陀胸甲,recipe
 T1 普通,1,kamenridercraft:akari_cannon,明裡加農,loot
 T1 普通,1,kamenridercraft:akarider_card,卡片(赤騎士),fallback
+T1 普通,1,kamenridercraft:akariderhead,假面戰隊頭盔,fallback
+T1 普通,1,kamenridercraft:akariderlegs,假面戰隊護腿,fallback
+T1 普通,1,kamenridercraft:akaridertroso,假面戰隊胸甲,fallback
 T1 普通,1,kamenridercraft:akiko_no_slipper,亞樹子的拖鞋,loot
 T1 普通,1,kamenridercraft:albino_joker_death_scythe,joker死鐮,fallback
 T1 普通,1,kamenridercraft:albino_joker_sealed,覺醒卡片·白化Joker,fallback
@@ -1648,6 +1651,9 @@ T1 普通,1,kamenridercraft:amazon_switch,Amazon開關,recipe
 T1 普通,1,kamenridercraft:amazon_whip,Amazon鞭,fallback
 T1 普通,1,kamenridercraft:amazonhead,Amazon頭盔,recipe
 T1 普通,1,kamenridercraft:amazonlegs,Amazon護腿,recipe
+T1 普通,1,kamenridercraft:amazonshead,Amazons頭盔,fallback
+T1 普通,1,kamenridercraft:amazonslegs,Amazons護腿,fallback
+T1 普通,1,kamenridercraft:amazonstroso,Amazons胸甲,fallback
 T1 普通,1,kamenridercraft:amazontroso,Amazon胸甲,recipe
 T1 普通,1,kamenridercraft:ancient_batta_medal,古代蝗核心硬幣,mob
 T1 普通,1,kamenridercraft:ancient_ooo_greeed_sword,古代王貪慾OOO之劍,mob
@@ -2038,8 +2044,13 @@ T1 普通,1,kamenridercraft:drill_ring,鑽頭巫師指環,loot
 T1 普通,1,kamenridercraft:drill_shell,覺醒卡片·鑽擊海螺,fallback
 T1 普通,1,kamenridercraft:drive_card,KamenRide 馳騎,recipe
 T1 普通,1,kamenridercraft:drive_driver_raise_buckle,馳騎驅動器代扣,recipe
+T1 普通,1,kamenridercraft:drive_head,Drive頭盔,floor;recipe
+T1 普通,1,kamenridercraft:drive_legs,Drive護腿,floor;recipe
 T1 普通,1,kamenridercraft:drive_lockseed,Drive鎖種,fallback
 T1 普通,1,kamenridercraft:drive_tridoron_ride_chemy_card,Drive賽特朗型號駕馭凱米卡,recipe
+T1 普通,1,kamenridercraft:drive_troso,Drive胸甲,floor;recipe
+T1 普通,1,kamenridercraft:drivedriver,Drive驅動器,floor;recipe
+T1 普通,1,kamenridercraft:drivedriver_darkdrive,Drive驅動器,floor;recipe
 T1 普通,1,kamenridercraft:drop_whale,覺醒卡片·墜落巨鯨,fallback
 T1 普通,1,kamenridercraft:drum_shield_green,綠堅鼓護盾,recipe
 T1 普通,1,kamenridercraft:drum_shield_red,紅堅鼓護盾,recipe
@@ -2110,9 +2121,13 @@ T1 普通,1,kamenridercraft:fourze_card,KamenRide Fourze,recipe
 T1 普通,1,kamenridercraft:fourze_cosmic_card,Final KamenRide Fourze宇宙狀態,recipe
 T1 普通,1,kamenridercraft:fourze_cosmic_ride_chemy_card,Fourze宇宙狀態駕馭凱米卡,recipe
 T1 普通,1,kamenridercraft:fourze_cosmic_ridewatch,Fourze宇宙狀態騎士錶盤,recipe
+T1 普通,1,kamenridercraft:fourze_driver,Fourze驅動器,floor;recipe
 T1 普通,1,kamenridercraft:fourze_driver_raise_buckle,Fourze驅動器代扣,recipe
 T1 普通,1,kamenridercraft:fourze_engage_ring,Fourze契約巫師指環,fallback
+T1 普通,1,kamenridercraft:fourze_head,Fourze頭盔,floor;recipe
+T1 普通,1,kamenridercraft:fourze_legs,Fourze護腿,floor;recipe
 T1 普通,1,kamenridercraft:fourze_lockseed,Fourze鎖種,recipe
+T1 普通,1,kamenridercraft:fourze_troso,Fourze胸甲,floor;recipe
 T1 普通,1,kamenridercraft:freeze_vent,冰凍降臨,mob
 T1 普通,1,kamenridercraft:fresh_orange_lockseed,新鮮柳橙鎖種,recipe
 T1 普通,1,kamenridercraft:fresh_pine_lockseed,新鮮鳳梨鎖種,recipe
@@ -2366,6 +2381,7 @@ T1 普通,1,kamenridercraft:ichigo_manga,假面騎士漫畫,fallback
 T1 普通,1,kamenridercraft:ichigo_mask,一號面具,loot
 T1 普通,1,kamenridercraft:ichigo_medal,一號核心硬幣,recipe
 T1 普通,1,kamenridercraft:ichigo_ridewatch,一號騎士錶盤,recipe
+T1 普通,1,kamenridercraft:ichigohead,一號頭盔,floor;recipe
 T1 普通,1,kamenridercraft:ichigolegs,一號護腿,recipe
 T1 普通,1,kamenridercraft:ichigotroso,一號胸甲,recipe
 T1 普通,1,kamenridercraft:iconga_no_akai_agito,壁畫紅色亞極陀之石,fallback
@@ -2504,6 +2520,8 @@ T1 普通,1,kamenridercraft:lovekov_turtle,拉布可芙(烏龜基因組),recipe
 T1 普通,1,kamenridercraft:lucky_energy_item,幸運能力,ore
 T1 普通,1,kamenridercraft:lychee_lockseed,荔枝鎖種,fallback
 T1 普通,1,kamenridercraft:mach_card,KamenRide 馬赫,recipe
+T1 普通,1,kamenridercraft:mach_driver_honoh,馬赫驅動器,floor;recipe
+T1 普通,1,kamenridercraft:mach_driver_honoh_chaser,馬赫驅動器(追獵),floor;recipe
 T1 普通,1,kamenridercraft:mach_driver_honoh_drive,馬赫驅動器(Drive),recipe
 T1 普通,1,kamenridercraft:mach_jaguar,覺醒卡片·馬赫美洲豹,fallback
 T1 普通,1,kamenridercraft:macheteddy,砍刀泰迪,recipe
@@ -2578,6 +2596,9 @@ T1 普通,1,kamenridercraft:muscle_energy_item,力量能力,ore
 T1 普通,1,kamenridercraft:muscle_galaxy_full_bottle,肌肉銀河滿裝瓶罐,fallback
 T1 普通,1,kamenridercraft:musou_saber,無雙軍刀,recipe
 T1 普通,1,kamenridercraft:my_th_edge,麥斯匕刃,fallback
+T1 普通,1,kamenridercraft:my_th_head,麥斯頭盔,fallback
+T1 普通,1,kamenridercraft:my_th_legs,麥斯護腿,fallback
+T1 普通,1,kamenridercraft:my_th_troso,麥斯胸甲,fallback
 T1 普通,1,kamenridercraft:nadeshiko_driver,撫子驅動器,mob;recipe
 T1 普通,1,kamenridercraft:nadeshiko_switch,撫子開關,mob
 T1 普通,1,kamenridercraft:nasca_blade,納斯卡的劍,fallback
@@ -2612,6 +2633,7 @@ T1 普通,1,kamenridercraft:nijigon_ride_chemy_card_special,彩虹龍駕馭凱�
 T1 普通,1,kamenridercraft:ningyo_sword,人魚劍,fallback
 T1 普通,1,kamenridercraft:ninja_dueler_raise_buckle,忍者雙刃代扣,loot
 T1 普通,1,kamenridercraft:ninja_raise_buckle,忍者代扣,loot
+T1 普通,1,kamenridercraft:ninjaplayerbelt,忍者玩家代扣,floor;recipe
 T1 普通,1,kamenridercraft:niwatori_vistamp,雞罪惡印章,loot
 T1 普通,1,kamenridercraft:nophoon_core,憲達核心,
 T1 普通,1,kamenridercraft:nophoon_kamen_norider,憲達腰帶,recipe
@@ -2638,6 +2660,9 @@ T1 普通,1,kamenridercraft:ooo_logo,OOO標誌,recipe
 T1 普通,1,kamenridercraft:ooo_putotyra_ride_chemy_card,OOO恐龍聯組駕馭凱米卡,recipe
 T1 普通,1,kamenridercraft:ooo_ridewatch,OOO騎士錶盤,recipe
 T1 普通,1,kamenridercraft:ooo_switch,OOO開關,recipe
+T1 普通,1,kamenridercraft:ooohead,OOO頭盔,floor;recipe
+T1 普通,1,kamenridercraft:ooolegs,OOO護腿,floor;recipe
+T1 普通,1,kamenridercraft:oootroso,OOO胸甲,floor;recipe
 T1 普通,1,kamenridercraft:ope_dummy_gochizo,OPE假冒飽藏,mob
 T1 普通,1,kamenridercraft:orange_full_bottle,柳橙滿裝瓶罐,fallback
 T1 普通,1,kamenridercraft:orange_lockseed,柳橙鎖種,chests;mob;ore
@@ -2652,6 +2677,7 @@ T1 普通,1,kamenridercraft:p_a_r_t_y_universe_festival_music_disc,P. A. R. T. Y
 T1 普通,1,kamenridercraft:pac_adventure_gashat,吃豆冒險傳奇卡帶,machine
 T1 普通,1,kamenridercraft:panda_medal,熊貓核心硬幣,mob
 T1 普通,1,kamenridercraft:parabragun_axe,悖論刃槍,recipe
+T1 普通,1,kamenridercraft:paradoxbelt,Para-DX代扣,floor;recipe
 T1 普通,1,kamenridercraft:parka_full_bottle,兜帽衣滿裝瓶罐,fallback
 T1 普通,1,kamenridercraft:perfect_puzzle_gasha_trophy,完美拼圖獎勵卡帶,mob
 T1 普通,1,kamenridercraft:perfect_wing_vistamp,完美之翼罪惡印章,fallback
@@ -2810,10 +2836,11 @@ T1 普通,1,kamenridercraft:shiita_mimicdeviser,擬人化形器,recipe
 T1 普通,1,kamenridercraft:shimi_lot,示彌·羅特刃槍,fallback
 T1 普通,1,kamenridercraft:shin_card,KamenRide 真,recipe
 T1 普通,1,kamenridercraft:shin_chan_switch,新醬開關,loot
+T1 普通,1,kamenridercraft:shin_ichigohead,新假面騎士頭盔,floor;recipe
 T1 普通,1,kamenridercraft:shin_ichigolegs,新假面騎士護腿,recipe
 T1 普通,1,kamenridercraft:shin_ichigotroso,新假面騎士胸甲,recipe
 T1 普通,1,kamenridercraft:shin_logo,真標誌,recipe
-T1 普通,1,kamenridercraft:shin_o_belt,新王腰帶,loot
+T1 普通,1,kamenridercraft:shin_o_belt,新王腰帶,floor;loot
 T1 普通,1,kamenridercraft:shin_ridewatch,真騎士錶盤,boss;recipe
 T1 普通,1,kamenridercraft:shin_stone,騎士紋章(真),
 T1 普通,1,kamenridercraft:shine_donkachi,閃耀橡金錘,fallback
@@ -2921,6 +2948,9 @@ T1 普通,1,kamenridercraft:televi_kun_wonder_ride_book,TV君奇幻駕馭書,mac
 T1 普通,1,kamenridercraft:ten_ton_weight,10噸重物,recipe
 T1 普通,1,kamenridercraft:teriyaki_umaibo_gochizo,美味棒飽藏(照燒口味),gochizo
 T1 普通,1,kamenridercraft:terror_memory,恐懼記憶體,fallback
+T1 普通,1,kamenridercraft:the_ichigo_head,THE系列頭盔,fallback
+T1 普通,1,kamenridercraft:the_ichigo_legs,THE系列護腿,fallback
+T1 普通,1,kamenridercraft:the_ichigo_troso,THE系列胸甲,fallback
 T1 普通,1,kamenridercraft:the_unbeatable_game,未完成的遊戲卡帶,fallback
 T1 普通,1,kamenridercraft:thief_chameleon,覺醒卡片·竊取變色龍,fallback
 T1 普通,1,kamenridercraft:thousand_ark_progrisekey,亞克千騎程式昇華鑰,fallback
@@ -3088,6 +3118,7 @@ T1 普通,1,kamenridercraft:zero_ghost_driver,Ghost驅動器(零號Ghost),recipe
 T1 普通,1,kamenridercraft:zero_liner_green,零列車綠,recipe
 T1 普通,1,kamenridercraft:zero_one_card,KamenRide 01,recipe
 T1 普通,1,kamenridercraft:zero_one_driver_raise_buckle,01驅動器代扣,recipe
+T1 普通,1,kamenridercraft:zero_onehead,01頭盔,floor;recipe
 T1 普通,1,kamenridercraft:zero_onelegs,01護腿,recipe
 T1 普通,1,kamenridercraft:zero_onetroso,01胸甲,recipe
 T1 普通,1,kamenridercraft:zero_specter_driver,Ghost驅動器(零號Specter),recipe
