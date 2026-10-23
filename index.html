@@ -108,9 +108,11 @@ body { margin: 0; }
 
   <section>
     <h2><span class="n">STEP 2</span>放入必備模組</h2>
-    <p>四個都要裝，版本請用跟伺服器一樣的。全部從 Modrinth 官方頁面下載，選 <b>NeoForge</b> 與 <b>1.21.1</b> 的版本。</p>
+    <p>六個都要裝，版本請用跟伺服器一樣的。<b>Kamen Rider Craft 一定要用下面這個伺服器專用版</b>，Modrinth 上的原版連不進來；其他從 Modrinth 官方頁面下載，選 <b>NeoForge</b> 與 <b>1.21.1</b> 的版本。</p>
     <div class="mods">
-      <div class="mod"><b>Kamen Rider Craft</b><span class="ver">1.1.4</span><small>主模組。<a href="https://modrinth.com/mod/kamen-rider-craft/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
+      <div class="mod"><b>Kamen Rider Craft（伺服器專用版）</b><span class="ver">1.1.4</span><small>主模組，加了潘朵拉魔盒路線的修改版，檔名一樣是 <code>kamenridercraft-1.1.4.jar</code>，約 80 MB。原本裝過原版的話，用這個覆蓋掉。<a href="https://raw.githubusercontent.com/moemuom9488m/kamenrider-server-guide/modpack/mods/kamenridercraft-1.1.4.jar">直接下載</a></small></div>
+      <div class="mod"><b>KubeJS</b><span class="ver">2101.7.2-build.377</span><small>潘朵拉魔盒路線的物品和配方靠它。<a href="https://raw.githubusercontent.com/moemuom9488m/kamenrider-server-guide/modpack/mods/kubejs-neoforge-2101.7.2-build.377.jar">直接下載</a></small></div>
+      <div class="mod"><b>Rhino</b><span class="ver">2101.2.7-build.85</span><small>KubeJS 的前置。<a href="https://raw.githubusercontent.com/moemuom9488m/kamenrider-server-guide/modpack/mods/rhino-2101.2.7-build.85.jar">直接下載</a></small></div>
       <div class="mod"><b>GeckoLib</b><span class="ver">4.9.3</span><small>Kamen Rider Craft 的前置（需要 4.8.4 以上）。<a href="https://modrinth.com/mod/geckolib/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
       <div class="mod"><b>Player Animation Library</b><span class="ver">1.1.6</span><small>Kamen Rider Craft 的前置（需要 1.1.4 以上），變身動作靠它。<a href="https://modrinth.com/mod/player-animation-library/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
       <div class="mod"><b>Patchouli</b><span class="ver">1.21.1-93</span><small>遊戲內指南書，Kamen Rider Craft 的說明書靠它顯示。<a href="https://modrinth.com/mod/patchouli/versions?l=neoforge&amp;g=1.21.1">Modrinth 下載頁</a></small></div>
@@ -123,6 +125,13 @@ body { margin: 0; }
     </ul>
     <p class="lead">伺服器另外裝了 Lithium、FerriteCore、ModernFix、Chunky、spark，它們只在伺服器上運作，玩家不用裝。</p>
     <p><b>選裝：JEI（查配方）</b>伺服器有裝 Just Enough Items <code>19.51.0.418</code>，想在遊戲裡查合成表的話自己也裝同一版（<a href="https://modrinth.com/mod/jei/version/19.51.0.418">Modrinth 下載頁</a>）。不裝也能正常連線。</p>
+    <h3>潘朵拉魔盒資料夾（必裝）</h3>
+    <p>KubeJS 還需要一個 <span class="path">kubejs/</span> 資料夾，裡面是啟動腳本和新物品的貼圖。沒有它會連不進伺服器，物品也會變成紫黑格子：</p>
+    <ol class="steps">
+      <li>下載 <a href="kr_pandora_client.zip"><code>kr_pandora_client.zip</code></a>。</li>
+      <li>解壓到放 <span class="path">mods/</span> 的那一層（例如 <span class="path">.minecraft/</span>），解壓後要有 <span class="path">.minecraft/kubejs/startup_scripts/pandora_box.js</span>。不要放進 <span class="path">mods/</span> 裡面。</li>
+    </ol>
+    <p class="lead">懶得一個一個裝的話，GitHub 的 <a href="https://github.com/moemuom9488m/kamenrider-server-guide/tree/modpack">modpack 分支</a>有服主整理好的完整模組包，上面這些都在裡面。</p>
     <h3>騎士變身攻略書（中文）</h3>
     <p>伺服器另外有一本中文的《騎士變身攻略》，整理平成到令和每位主角騎士的腰帶、素材和盔甲配方。書的內容要放在你自己的遊戲裡才看得到：</p>
     <ol class="steps">
@@ -156,7 +165,7 @@ body { margin: 0; }
     <ul>
       <li><b>繁體中文翻譯：</b>第一次進服會跳出「套用假面騎士模組繁體中文翻譯？」，按<b>是</b>就會自動下載並套用。接著到「選項 → 語言」選 <b>繁體中文（台灣）</b>。</li>
       <li><b>指南書：</b>第一次進服會自動拿到一本 Kamen Rider Craft 指南書，裡面有各騎士的取得與變身方式（內容是英文）。弄丟了可以用 3 張紙 + 1 個皮革 + 1 個騎士電路板（Rider Circuit）無序合成。</li>
-      <li><b>騎士變身攻略書：</b>用 1 本書 + 1 個紅石無序合成（要先照 STEP 2 裝好書的資料夾，不然打開是空的）。</li>
+      <li><b>騎士變身攻略書：</b>用 1 本書 + 1 個紅石無序合成（要先照 STEP 2 裝好書的資料夾，不然打開是空的）。2026-10-23 更新：新增「潘朵拉魔盒」一篇，舊的書資料夾請重新下載覆蓋。</li>
       <li><b>死亡不噴裝：</b>伺服器開了防噴（keepInventory），死掉時背包、裝備和經驗都會保留。</li>
       <li><b>騎士交易所：</b>伺服器的騎士交易所有原版與模組村民、礦物兌換商、騎士礦兌換商，以及可以把不要的假面騎士道具換成綠寶石的收購櫃台。價錢請看<a href="prices.html">收購價目表</a>。</li>
       <li><b>時間暫停：</b>伺服器連續 5 分鐘沒人在線時，日夜、天氣和作物生長會暫停；有人進來就恢復。</li>
@@ -173,8 +182,8 @@ body { margin: 0; }
     <ol class="steps">
       <li><b>拿潘多拉魔盒：</b>到浮士德基地打掉「夜霸頭目召喚方塊」召喚夜霸，打倒必掉<b>潘多拉魔盒</b>（另有迷失蝙蝠滿裝瓶罐）。</li>
       <li><b>爬塔：</b>塔內 4 個試煉生怪磚會生出東都、北都、聖都、堅硬防衛者，打完會噴進化瓶罐或迷失瓶罐。</li>
-      <li><b>召喚 Evol：</b>打掉塔頂的「Evol 頭目召喚方塊」。和平難度不會出現。Evol 血量 200、護甲 3、攻擊 10。</li>
-      <li><b>重複打 Evol 往下拿：</b>帶著上一階的道具再打一次，見下表。每次打 Evol 都需要一個召喚方塊（找另一座魔塔，或請服主重置這座）。</li>
+      <li><b>召喚 Evol：</b>打掉塔頂的「Evol 頭目召喚方塊」。和平難度不會出現。Evol 血量 200、護甲 3、攻擊 10。塔身另外還有北都三羽鴉、地獄兄弟、狂霸三組頭目召喚方塊。</li>
+      <li><b>重複打 Evol 往下拿：</b>帶著上一階的道具再打一次，見下表。每次打 Evol 都需要一個召喚方塊（找另一座魔塔，或請服主重置這座）。召喚出來的頭目不會自己消失，打到一半離開，回來時它還在。</li>
     </ol>
     <div class="table-scroll">
       <table>
@@ -188,6 +197,15 @@ body { margin: 0; }
       </table>
     </div>
     <p class="note"><b>建議路線：</b>夜霸 → 魔盒 → Evol（拿扳機）→ Evol（拿嵌板）→ Evol（拿銀龍／金兔）。後兩階 Evol 會變強，帶好裝備和食物再上。</p>
+    <h3>另一條路：集滿 60 瓶做天才滿裝瓶</h3>
+    <ol class="steps">
+      <li><b>做面板：</b>8 個空的滿裝瓶圍著中間一個礦物合成潘朵拉面板：綠寶石＝東都、鑽石＝北都、紅石＝西都。</li>
+      <li><b>放滿裝瓶：</b>每片面板放 5 組 Best Match 共 10 瓶，上面那瓶要是下面那瓶的 Best Match，不合規的瓶子放不進去。每個地區有 I、II 兩片，各收該地區的前 10 瓶和後 10 瓶。</li>
+      <li><b>完成面板：</b>放滿的面板單獨放進工作台，就會變成「完成的潘朵拉面板」，裡面的瓶子會保留；想拿回來的話，再單獨合成一次就變回原本的面板。</li>
+      <li><b>組魔盒：</b>東都、北都、西都各 I、II 共 6 片完成面板，合成「已打開的潘朵拉魔盒」。</li>
+      <li><b>天才滿裝瓶：</b>已打開的魔盒放中間，周圍 8 個騎士電路板。</li>
+    </ol>
+    <p class="lead">捷徑：拿金手鐲對夜霸掉的潘多拉魔盒（放在地上）按右鍵，會直接變成已打開的魔盒（金手鐲會用掉）。已打開的魔盒放到地上後，用絲綢之觸挖會掉回魔盒本身，否則會散回 6 片完成面板。完成面板可以對牆面按右鍵掛起來展示。</p>
   </section>
 
   <section>
@@ -196,12 +214,14 @@ body { margin: 0; }
       <table>
         <thead><tr><th>錯誤訊息</th><th>意思</th><th>怎麼處理</th></tr></thead>
         <tbody>
-          <tr><td>missing mods</td><td>你少裝了伺服器有的模組</td><td>把訊息列出的模組（照上面的版本）放進 <span class="path">mods/</span></td></tr>
+          <tr><td>missing mods</td><td>你少裝了伺服器有的模組</td><td>把訊息列出的模組（照上面的版本）放進 <span class="path">mods/</span>。列出 kubejs 或 rhino 的話，照 STEP 2 補裝</td></tr>
+          <tr><td>Registry 不符<br>或進服後立刻斷線</td><td>少了 <span class="path">kubejs/</span> 資料夾，新物品對不上</td><td>照 STEP 2 解壓 <code>kr_pandora_client.zip</code></td></tr>
+          <tr><td>能進服，但潘朵拉面板放瓶子怪怪的</td><td>Kamen Rider Craft 還是 Modrinth 原版</td><td>換成 STEP 2 的伺服器專用版</td></tr>
           <tr><td>extra mods</td><td>你多裝了伺服器沒有、又需要兩邊都有的模組</td><td>把列出的模組先移出 <span class="path">mods/</span> 再連；若是純畫面類模組，可改用支援的版本</td></tr>
           <tr><td>version mismatch<br>channel version mismatch</td><td>模組版本跟伺服器不同</td><td>換成跟伺服器一樣的版本（見 STEP 2）</td></tr>
           <tr><td>not running NeoForge</td><td>你用的是原版、Forge 或 Fabric</td><td>改用 NeoForge 1.21.1 的設定檔開遊戲</td></tr>
           <tr><td>Connection timed out</td><td>連不到伺服器</td><td>確認 Tailscale 有開、有登入，且服主已經把你加進來</td></tr>
-          <tr><td>Incompatible mod set</td><td>整體模組組合對不上</td><td>先只留四個必備模組測試，能連上後再一個一個加回其他模組</td></tr>
+          <tr><td>Incompatible mod set</td><td>整體模組組合對不上</td><td>先只留六個必備模組（加上 <span class="path">kubejs/</span> 資料夾）測試，能連上後再一個一個加回其他模組</td></tr>
         </tbody>
       </table>
     </div>
