@@ -6,7 +6,7 @@
  "pages": [
   {
    "type": "patchouli:text",
-   "text": "$(li)打 Bugster → Unfinished Gashat$(li)做 Game Creator$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
+   "text": "$(li)打缺陷者（Bugster） → Unfinished Gashat$(li)做 Game Creator$(li)拿著材料對機器$(bold)按右鍵（手把 A）$()，材料會被吃掉並隨機掉出一個道具。",
    "title": "流程"
   },
   {

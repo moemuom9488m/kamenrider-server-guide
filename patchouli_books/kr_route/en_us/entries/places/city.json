@@ -12,7 +12,7 @@
   },
   {
    "type": "patchouli:text",
-   "text": "打 Kamen Rider Woz（White Woz），7.7% 掉 White Woz Time Mazine Ridewatch。$(br2)Woz 要自己做 Boss Block 召喚：Geiz Ridewatch + Blank Ridewatch + 2 Rider Circuit + 書。",
+   "text": "打假面騎士沃茲（Kamen Rider Woz）（白沃茲（White Woz）），7.7% 掉 White Woz Time Mazine Ridewatch。$(br2)沃茲（Woz）要自己做 Boss Block 召喚：Geiz Ridewatch + Blank Ridewatch + 2 Rider Circuit + 書。",
    "title": "怎麼拿"
   },
   {
@@ -22,12 +22,12 @@
   },
   {
    "type": "patchouli:text",
-   "text": "原書很多「Found inside Yggdrasil Tower」「Fuuto Tower」「Kuruma Center」「Shocker Base」，$(bold)其實都在城市維度裡$()。$(4)※原書沒寫$()",
+   "text": "原書很多「Found inside 世界樹塔（Yggdrasil Tower）」「風都塔（Fuuto Tower）」「Kuruma Center」「修卡基地（Shocker Base）」，$(bold)其實都在城市維度裡$()。$(4)※原書沒寫$()",
    "title": "重要"
   },
   {
    "type": "patchouli:text",
-   "text": "$(li)Fuuto Tower（W）$(li)Yggdrasil Tower（鎧武）$(li)Kuruma Center、Drive Pit（Drive）$(li)Pandora Tower（Build）$(li)Hiden Intelligence（Zero-One）$(li)Shocker Base（昭和）$(li)東京鐵塔、各作的小店（如 Narumi 偵探社）",
+   "text": "$(li)風都塔（Fuuto Tower）（W）$(li)世界樹塔（Yggdrasil Tower）（鎧武）$(li)Kuruma Center、Drive Pit（Drive）$(li)潘朵拉之塔（Pandora Tower）（Build）$(li)飛電Intelligence（Hiden Intelligence）（Zero-One）$(li)修卡基地（Shocker Base）（昭和）$(li)東京鐵塔、各作的小店（如鳴海偵探事務所（Narumi））",
    "title": "城裡的地標"
   }
  ]

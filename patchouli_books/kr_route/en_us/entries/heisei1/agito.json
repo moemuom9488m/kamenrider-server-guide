@@ -1,5 +1,5 @@
 {
- "name": "亞極陀 Agito",
+ "name": "顎門 Agito",
  "icon": "kamenridercraft:alter_ring",
  "category": "patchouli:heisei1",
  "sortnum": 1,
@@ -19,7 +19,7 @@
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:agito_of_seed",
    "title": "基礎素材",
-   "text": "打 Pantheras Luteus、El of the Water、Anguis Masculus、Another Agito。"
+   "text": "打 Pantheras Luteus、El of the Water、Anguis Masculus、另類顎門（Another Agito）。"
   },
   {
    "type": "patchouli:spotlight",

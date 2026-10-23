@@ -6,12 +6,12 @@
  "pages": [
   {
    "type": "patchouli:text",
-   "text": "$(li)空我之墓：河流$(li)Castle Doran、Shoodoran：森林類$(li)Pandora Tower、Faust Base：平原、森林、莽原$(li)Daybreak Town：森林、平原$(li)Gara 的江戶村：森林、平原",
+   "text": "$(li)空我之墓：河流$(li)Castle Doran、Shoodoran：森林類$(li)潘朵拉之塔（Pandora Tower）、浮士德基地（Faust Base）：平原、森林、莽原$(li)Daybreak Town：森林、平原$(li)Gara 的江戶村：森林、平原",
    "title": "主世界（一）"
   },
   {
    "type": "patchouli:text",
-   "text": "$(li)Jyamar Garden：叢林$(li)Ginga's Meteor：山峰、雪坡、櫻花林$(li)Overlord 遺物：海灘$(li)Earth's Core：繁茂洞穴、鐘乳石洞、深暗之域$(li)舞台秀 Stageshow：森林、平原、莽原村莊附近",
+   "text": "$(li)邪魔庭園（Jyamar Garden）：叢林$(li)Ginga's Meteor：山峰、雪坡、櫻花林$(li)異域霸者（Overlord）遺物：海灘$(li)Earth's Core：繁茂洞穴、鐘乳石洞、深暗之域$(li)舞台秀 Stageshow：森林、平原、莽原村莊附近",
    "title": "主世界（二）"
   },
   {

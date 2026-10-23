@@ -1,23 +1,23 @@
 {
- "name": "赫爾海姆",
+ "name": "海爾冥界（Helheim）",
  "icon": "kamenridercraft:sid_lockseed",
  "category": "patchouli:places",
  "sortnum": 4,
  "pages": [
   {
    "type": "patchouli:text",
-   "text": "走進 Helheim Crack（裂縫方塊）就會進入。$(br2)裂縫生成在：森林、平原、沼澤、叢林等地表生態域。$(br2)赫爾海姆裡也有裂縫，$(bold)走進去就回主世界$()。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
+   "text": "走進 Helheim Crack（裂縫方塊）就會進入。$(br2)裂縫生成在：森林、平原、沼澤、叢林等地表生態域。$(br2)海爾冥界（Helheim）裡也有裂縫，$(bold)走進去就回主世界$()。$(4)※原書沒寫，從模組程式碼推斷，尚未實測$()",
    "title": "怎麼進去"
   },
   {
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:sid_lockseed",
-   "text": "裝備 Agents 時拿在手上使用，可以自己開一道裂縫。$(br2)打 Kamen Rider Sigurd（Kurokage Trooper 2.5% 變成）有 25% 掉。",
+   "text": "裝備 Agents 時拿在手上使用，可以自己開一道裂縫。$(br2)打假面騎士齊格德（Kamen Rider Sigurd）（黑影衛兵（Kurokage Trooper） 2.5% 變成）有 25% 掉。",
    "title": "Sid Lockseed"
   },
   {
    "type": "patchouli:text",
-   "text": "$(li)Yggdrasil Research Camp：Kurokage Trooper$(li)Rosyuo、Redyue、Demushu 的城：Boss Block、可疑沙礫$(li)Planet Megahex：Megahex Boss Block$(br2)可疑沙礫可刷 Kabi Orange Lockseed 等。",
+   "text": "$(li)Yggdrasil Research Camp：黑影衛兵（Kurokage Trooper）$(li)羅修沃（Rosyuo）、雷迪耶（Redyue）、迪穆修（Demushu）的城：Boss Block、可疑沙礫$(li)Planet Megahex：Megahex Boss Block$(br2)可疑沙礫可刷 Kabi Orange Lockseed 等。",
    "title": "裡面有什麼"
   }
  ]

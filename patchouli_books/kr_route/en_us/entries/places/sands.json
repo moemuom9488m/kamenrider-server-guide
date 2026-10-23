@@ -17,12 +17,12 @@
   },
   {
    "type": "patchouli:text",
-   "text": "8 Imagin Sand + 任何一種門。$(br2)Imagin Sand 打 Mole Imagin（沙漠、海灘、針葉林、惡地）。",
+   "text": "8 Imagin Sand + 任何一種門。$(br2)Imagin Sand 打鼴鼠異魔神（Mole Imagin）（沙漠、海灘、針葉林、惡地）。",
    "title": "材料"
   },
   {
    "type": "patchouli:text",
-   "text": "$(li)各 DenLiner：寶箱有 Rider Ticket 與 Imagin 票$(li)KingLiner：DenKamen Sword$(li)ZeroLiner：Zeronos 卡$(li)GaohLiner：Gaoh Boss Block（Rider Ticket 來源）",
+   "text": "$(li)各電列車（DenLiner）：寶箱有 Rider Ticket 與異魔神（Imagin）票$(li)王列車（KingLiner）：DenKamen Sword$(li)零列車（ZeroLiner）：零神（Zeronos）卡$(li)牙王列車（GaohLiner）：Gaoh Boss Block（Rider Ticket 來源）",
    "title": "裡面的列車"
   }
  ]

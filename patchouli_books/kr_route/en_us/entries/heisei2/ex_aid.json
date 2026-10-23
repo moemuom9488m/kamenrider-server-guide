@@ -19,13 +19,13 @@
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:blank_gashat",
    "title": "基礎素材",
-   "text": "打 Bugster、Genm、Ride-Player。"
+   "text": "打缺陷者（Bugster）、Genm、騎士玩家（Ride-Player）。"
   },
   {
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:mighty_action_x_gashat",
    "title": "關鍵道具",
-   "text": "Unfinished Gashat 點 Game Creator，13.6%；也會從 Bugster 掉。"
+   "text": "Unfinished Gashat 點 Game Creator，13.6%；也會從缺陷者（Bugster）掉。"
   },
   {
    "type": "patchouli:crafting",

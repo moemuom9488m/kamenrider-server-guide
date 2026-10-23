@@ -1,0 +1,56 @@
+{
+ "name": "Build：潘朵拉魔盒",
+ "icon": "kamenridercraft:pandora_box",
+ "category": "patchouli:heisei2",
+ "sortnum": 18,
+ "pages": [
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:pandora_box",
+   "title": "潘朵拉魔盒",
+   "text": "暗夜惡徒（Night Rogue）會掉魔盒。$(br2)用空瓶點它得到 Pandora Bottle，用 Hazard Trigger 點它得到白色 Pandora Panel。$(br2)$(4)※以下是自訂路線：把 60 瓶滿裝瓶放進 6 片面板，組成「已打開的潘朵拉魔盒」，再做 Genius Fullbottle。$()"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "面板的規則",
+   "text": "面板來源：$(li)東都（Touto）：血潛（Blood Stalk）$(li)西都（Seito）：Kamen Rider Build（葛城忍）$(li)北都（Hokuto）：Grease$(br2)$(li)上下兩排，每一欄上下要是一組 Best Match$(li)只能放該地區的瓶子$(li)一片放 5 組：I = 第 1~10 個，II = 第 11~20 個$(li)欄位與上下順序不限"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "合成面板",
+   "text": "面板也可以自己合成：中間放礦物，周圍 8 個 Empty Bottle。$(br2)$(li)東都（Touto）：Emerald$(li)北都（Hokuto）：Diamond$(li)西都（Seito）：Redstone$(br2)礦物的顏色對應面板的顏色。$(br2)Empty Bottle 打各種保衛者（Guardian）就會掉，一次 2~4 個。$(4)※自訂配方$()"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "東都（Touto）",
+   "text": "I：$(br)$(li)Rabbit + Tank$(li)Gorilla + Diamond$(li)Taka + Gatling$(li)Harinezumi + Shoubousha$(li)Ninja + Comic$(br2)II：$(br)$(li)Panda + Rocket$(li)Lion + Soujiki$(li)Dragon + Lock$(li)Kaizoku + Densha$(li)Octopus + Light"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "北都（Hokuto）",
+   "text": "I：$(br)$(li)Phoenix + Robot$(li)Wolf + Smapho$(li)Unicorn + Keshigomu$(li)Rose + Helicopter$(li)Turtle + Watch$(br2)II：$(br)$(li)Kuma + Televi$(li)Kabutomushi + Camera$(li)Spider + Reizouko$(li)Dog + Mic$(li)Santa Claus + Cake"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "西都（Seito）",
+   "text": "I：$(br)$(li)Tora + UFO$(li)Kujira + Jet$(li)Shika + Pyramid$(li)Kirin + Senpuuki$(li)Penguin + Skebo$(br2)II：$(br)$(li)Same + Bike$(li)Hachi + Sensuikan$(li)Sai + Dryer$(li)Bat + Engine$(li)Obake + Magnet"
+  },
+  {
+   "type": "patchouli:text",
+   "title": "完成面板",
+   "text": "把裝好 5 組的面板單獨放進合成格，會變成「完成的潘朵拉面板（○都 I 或 II）」，瓶子會留在裡面。$(br2)I 或 II 由面板裡的瓶子決定。$(br2)完成面板單獨放進合成格，可以還原成裝滿瓶子的原版面板。$(br2)東都（Touto）、北都（Hokuto）、西都（Seito）的 I 和 II 共 6 種完成面板，各一片放進合成格，就能做出已打開的潘朵拉魔盒。"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kubejs:opened_pandora_box",
+   "title": "已打開的潘朵拉魔盒",
+   "text": "捷徑：拿 Golden Bangle 對放在地上的潘朵拉魔盒按右鍵，會直接打開，並消耗 1 個 Golden Bangle。$(br2)放在地上後要用鎬子挖：有絲綢之觸會掉魔盒本身，沒有的話會散成 6 片完成面板（瓶子都在裡面）。$(4)※自訂規則，跟終界箱一樣$()"
+  },
+  {
+   "type": "patchouli:spotlight",
+   "item": "kamenridercraft:genius_full_bottle",
+   "title": "Genius Fullbottle",
+   "text": "已打開的潘朵拉魔盒放中間，周圍 8 個 Rider Circuit，就能合成。$(br2)打 $(l:heisei2/build)Build$() Boss 取得 Unfinished Genius Fullbottle 的舊路線仍然可用。"
+  }
+ ]
+}

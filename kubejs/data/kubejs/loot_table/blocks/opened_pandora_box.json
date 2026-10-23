@@ -1,0 +1,708 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:silk_touch",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:opened_pandora_box"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_touto_1",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:rabbit_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:gorilla_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:taka_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:harinezumi_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:ninja_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:tank_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:diamond_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:gatling_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:shoubousha_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:comic_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_touto_2",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:panda_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:lion_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:dragon_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:kaizoku_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:octopus_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:rocket_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:soujiki_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:lock_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:densha_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:light_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_hokuto_1",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:phoenix_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:wolf_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:unicorn_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:rose_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:turtle_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:robot_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:smapho_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:keshigomu_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:helicopter_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:watch_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_hokuto_2",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:kuma_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:kabutomushi_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:spider_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:dog_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:santa_claus_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:televi_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:camera_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:reizouko_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:mic_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:cake_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_seito_1",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:tora_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:kujira_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:shika_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:kirin_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:penguin_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:ufo_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:jet_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:pyramid_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:senpuuki_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:skebo_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:silk_touch",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:complete_pandora_panel_seito_2",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "kamenridercraft:same_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 1,
+                    "item": {
+                      "id": "kamenridercraft:hachi_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 2,
+                    "item": {
+                      "id": "kamenridercraft:sai_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 3,
+                    "item": {
+                      "id": "kamenridercraft:bat_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 4,
+                    "item": {
+                      "id": "kamenridercraft:obake_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 5,
+                    "item": {
+                      "id": "kamenridercraft:bike_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 6,
+                    "item": {
+                      "id": "kamenridercraft:sensuikan_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 7,
+                    "item": {
+                      "id": "kamenridercraft:dryer_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 8,
+                    "item": {
+                      "id": "kamenridercraft:engine_full_bottle",
+                      "count": 1
+                    }
+                  },
+                  {
+                    "slot": 9,
+                    "item": {
+                      "id": "kamenridercraft:magnet_full_bottle",
+                      "count": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "kubejs:blocks/opened_pandora_box"
+}

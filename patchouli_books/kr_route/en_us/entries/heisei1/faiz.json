@@ -19,13 +19,13 @@
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:blank_mission_memory",
    "title": "基礎素材",
-   "text": "打 Riotrooper、Orga、Muez、Kamen Rider Faiz。"
+   "text": "打萊歐騎兵（Riotrooper）、Orga、Muez、Kamen Rider Faiz。"
   },
   {
    "type": "patchouli:spotlight",
    "item": "kamenridercraft:faiz_mission_memory",
    "title": "關鍵道具",
-   "text": "打 Riotrooper 或 Kamen Rider Faiz 掉落。"
+   "text": "打萊歐騎兵（Riotrooper）或 Kamen Rider Faiz 掉落。"
   },
   {
    "type": "patchouli:crafting",
